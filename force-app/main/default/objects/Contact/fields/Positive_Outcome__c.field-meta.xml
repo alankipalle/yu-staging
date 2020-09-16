@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Positive_Outcome__c</fullName>
+    <description>If cohort is before July 2015 returns a 1 if employed full-time or part-time or in school full-time. If after July 2015 returns a 1 if all any previous condition is met in addition to in school part-time. Returns a 0 otherwise.</description>
+    <externalId>false</externalId>
+    <formula>IF( Most_Recent_Cohort_Date_Value__c &lt; DATE(2015,7,1),
+  IF( OR(ISPICKVAL( Employment_Summary__c ,&quot;Full-time&quot;),ISPICKVAL( Employment_Summary__c , &quot;Part-time&quot;),ISPICKVAL( Higher_Ed_Summary__c , &quot;FT&quot;), Training_Summary__c = &quot;FT&quot;),1,0),
+  IF( OR(ISPICKVAL( Employment_Summary__c ,&quot;Full-time&quot;),ISPICKVAL( Employment_Summary__c , &quot;Part-time&quot;),ISPICKVAL( Higher_Ed_Summary__c , &quot;FT&quot;),ISPICKVAL(Higher_Ed_Summary__c,&quot;PT&quot;),Training_Summary__c = &quot;FT&quot;),1,0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If cohort is before July 2015 returns a 1 if employed full-time or part-time or in school full-time. If after July 2015 returns a 1 if all any previous condition is met in addition to in school part-time. Returns a 0 otherwise.</inlineHelpText>
+    <label>Positive Outcome</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

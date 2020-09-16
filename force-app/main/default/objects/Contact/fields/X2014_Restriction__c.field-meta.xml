@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2014_Restriction__c</fullName>
+    <description>Used for 2014 forecasting</description>
+    <externalId>false</externalId>
+    <label>2014 Restriction</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unrestricted</fullName>
+                <default>false</default>
+                <label>Unrestricted</label>
+            </value>
+            <value>
+                <fullName>Restricted</fullName>
+                <default>false</default>
+                <label>Restricted</label>
+            </value>
+            <value>
+                <fullName>Conditional</fullName>
+                <default>false</default>
+                <label>Conditional</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Mailing_Address_for_Devo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Primary_Address__c, &apos;Work&apos;),
+OtherStreet &amp; BR() &amp;
+OtherCity &amp; IF(LEN(OtherCity) &gt; 0, &quot;, &quot;, &quot;&quot;) &amp; OtherState &amp; &quot; &quot; &amp; OtherPostalCode 
+&amp; if (LEN(OtherCountry)&gt;0,BR()&amp; OtherCountry,&quot;&quot;) ,
+
+IF(ISPICKVAL(Primary_Address__c, &apos;Home&apos;),
+MailingStreet &amp; BR() &amp;
+MailingCity &amp; IF(LEN(MailingCity) &gt; 0, &quot;, &quot;, &quot;&quot;) &amp; MailingState &amp; &quot; &quot; &amp; MailingPostalCode 
+&amp; if (LEN(MailingCountry)&gt;0,BR()&amp; MailingCountry,&quot;&quot;) ,
+
+IF(ISPICKVAL(Primary_Address__c, &apos;Default Household&apos;),
+Account.BillingStreet &amp; BR() &amp;
+Account.BillingCity &amp; IF(LEN(Account.BillingCity) &gt; 0, &quot;, &quot;, &quot;&quot;) &amp; Account.BillingState &amp; &quot; &quot; &amp; Account.BillingPostalCode 
+&amp; if (LEN(Account.BillingCountry)&gt;0,BR()&amp; Account.BillingCountry,&quot;&quot;) ,&apos;&apos;)))</formula>
+    <label>Mailing Address for Devo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

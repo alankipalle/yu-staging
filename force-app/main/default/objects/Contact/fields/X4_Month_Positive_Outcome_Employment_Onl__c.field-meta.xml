@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X4_Month_Positive_Outcome_Employment_Onl__c</fullName>
+    <description>Displays a 1 if the contact is a positive outcome based on employment records. The contact can also have training and education records that qualify as well.
+Carlos Note: This field seems really unnecessary as the other field already shows the count of Employment records...so like why....</description>
+    <externalId>false</externalId>
+    <formula>IF(  X4_Month_Positive_Outcome_Employment_Rec__c  &gt; 0, 1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays a 1 if the contact is a positive outcome based on employment records. The contact can also have training and education records that qualify as well.</inlineHelpText>
+    <label>4 Month Positive Outcome Employment</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

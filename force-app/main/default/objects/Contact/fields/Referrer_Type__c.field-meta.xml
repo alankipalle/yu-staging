@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Referrer_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Referrer Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Year Up student/alum</fullName>
+                <default>false</default>
+                <label>Year Up student/alum</label>
+            </value>
+            <value>
+                <fullName>Staff from a non-Year Up program</fullName>
+                <default>false</default>
+                <label>Staff from a non-Year Up program</label>
+            </value>
+            <value>
+                <fullName>Year Up staff</fullName>
+                <default>false</default>
+                <label>Year Up staff</label>
+            </value>
+            <value>
+                <fullName>Co-worker</fullName>
+                <default>false</default>
+                <label>Co-worker</label>
+            </value>
+            <value>
+                <fullName>Guidance counselor</fullName>
+                <default>false</default>
+                <label>Guidance counselor</label>
+            </value>
+            <value>
+                <fullName>Friend/family member</fullName>
+                <default>false</default>
+                <label>Friend/family member</label>
+            </value>
+            <value>
+                <fullName>Principal/teacher</fullName>
+                <default>false</default>
+                <label>Principal/teacher</label>
+            </value>
+            <value>
+                <fullName>Social worker</fullName>
+                <default>false</default>
+                <label>Social worker</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

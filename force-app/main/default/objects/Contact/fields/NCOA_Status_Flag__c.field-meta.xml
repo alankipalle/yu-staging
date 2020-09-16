@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>NCOA_Status_Flag__c</fullName>
+    <description>March 2015 ROI NCOA Status Flag
+July 2015 Melissa Data NCOA Status Flag</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ROI:
+V = Verified
+N = Null (no match flag)
+M = Multi-Match
+
+Melissa Data:
+1 = Moved - new address now on file
+2 = Moved but not exact match - new address now on file
+3 = Validated Address
+7 = Invalid Address</inlineHelpText>
+    <label>NCOA Status Flag</label>
+    <length>3</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

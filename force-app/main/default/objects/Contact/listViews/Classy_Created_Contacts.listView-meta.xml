@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Classy_Created_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.PHONE4</columns>
+    <columns>CONTACT.ADDRESS2_STREET</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CONTACT.ADDRESS2_STATE</columns>
+    <columns>CONTACT.ADDRESS2_ZIP</columns>
+    <columns>CONTACT.ADDRESS2_COUNTRY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>classysf</value>
+    </filters>
+    <label>Classy Created Contacts for Validation</label>
+    <sharedTo>
+        <group>Devo_Staff</group>
+        <group>Yearup_ITTeam</group>
+    </sharedTo>
+</ListView>

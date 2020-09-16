@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Volunteer_Interest__c</fullName>
+    <description>The list of volunteer opportunities a volunteer is interested in, for any given Site/Market.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The list of volunteer opportunities a volunteer is interested in, for any given Site/Market.</inlineHelpText>
+    <label>Volunteer Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Volunteer_Type</valueSetName>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

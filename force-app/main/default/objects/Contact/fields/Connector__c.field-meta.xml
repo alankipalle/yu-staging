@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Connector__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>person that connected Year Up with a potential donor</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Person that introduced this contact to Year Up</inlineHelpText>
+    <label>Connector</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Development Connections</relationshipLabel>
+    <relationshipName>Contacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

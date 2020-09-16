@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Student_Community_User__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Establishes a look up relationship between student contact record and student community user for the purposes of reporting.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Establishes a look up relationship between student contact record and student community user for the purposes of reporting.</inlineHelpText>
+    <label>Student Community User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Contacts2</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

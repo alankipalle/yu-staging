@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>VIP_Owner__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to be used by the CE team to help coordinate campaign communications to CE VIP Contacts to avoid contacts receiving too many communications.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checkbox is selected, please contact the Account Owner prior to including contact in newsletters, email distribution lists or marketing campaigns.</inlineHelpText>
+    <label>CE VIP Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

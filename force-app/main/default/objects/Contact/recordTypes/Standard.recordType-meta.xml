@@ -1,0 +1,2121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Standard</fullName>
+    <active>true</active>
+    <description>Contacts who are neither students nor donors</description>
+    <label>Standard</label>
+    <picklistValues>
+        <picklist>Affinity_rating__c</picklist>
+        <values>
+            <fullName>High - Closest friends and supporters%3B Year Up is their top philanthropy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low - Little Development contact%3B or displayed minimal interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium - Donors but not giving at significant levels%3B requires significant cultivation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium High - Donors giving near capacity with enthusiasm%2C but not their top philanthropy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unknown - Unqualified%3B requires research analysis and%2For a Development Officer contact</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Cause_of_Death__c</picklist>
+        <values>
+            <fullName>Natural causes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overdose%2FSubstance abuse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suicide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Violence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>College_Degree__c</picklist>
+        <values>
+            <fullName>Associate%27s degree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bachelor%E2%80%99s degree or higher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Role__c</picklist>
+        <values>
+            <fullName>Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alumni</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assigned Board Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Billing Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coach Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Committee Chair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Committee Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contract Facilitator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive Sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Financial Decision Maker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Employer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Funder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Partner Directory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life - Success Story</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grant Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Donor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Matching Gift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Officer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Organizational Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Representative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Soft Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supervisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Influencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Volunteer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Contact_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Deceased</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Longer At Company</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Converted_Lead_Stage__c</picklist>
+        <values>
+            <fullName>Info Session Attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Session Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Session No Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Session Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Info Session Waived</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Interest Form Submitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referred Out</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DS360oi__Level__c</picklist>
+        <values>
+            <fullName>Primary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tertiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Desired_Start__c</picklist>
+        <values>
+            <fullName>Jan 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jan 2020</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July 2016</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July 2017</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July 2018</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July 2019</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>July 2020</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employment_Higher_Ed_Summary__c</picklist>
+        <values>
+            <fullName>Currently out of work and in school FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently out of work and in school PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently out of work and not in school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working FT and in school FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working FT and in school PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working FT and not in school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working PT and in school FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working PT and in school PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently working PT and not in school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No current employment%2Fschool information</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Employment_Summary__c</picklist>
+        <values>
+            <fullName>FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unemployed</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Foster_Care_Involvement__c</picklist>
+        <values>
+            <fullName>Aged out %2F emancipated from system</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Currently in care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>History of temporary in care</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kinship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Was in care then adopted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GW_Volunteers__Volunteer_Availability__c</picklist>
+        <values>
+            <fullName>Afternoon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekdays</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weekly</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GW_Volunteers__Volunteer_Skills__c</picklist>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>GW_Volunteers__Volunteer_Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Sign Up</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I prefer not to say</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Giving_Society_Last_Year__c</picklist>
+        <values>
+            <fullName>1 Member %281%2C000 - 4%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Bronze %285%2C000 - 9%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Silver %2810%2C000 - 24%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 Gold %2825%2C000 - 49%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Platinum %2850%2C000 - 99%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Sapphire %28100%2C000 - 249%2C000%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 Diamond %28250%2C000%2B%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Giving_Society_This_Year__c</picklist>
+        <values>
+            <fullName>1 Member %281%2C000 - 4%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Bronze %285%2C000 - 9%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Silver %2810%2C000 - 24%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 Gold %2825%2C000 - 49%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 Platinum %2850%2C000 - 99%2C999%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 Sapphire %28100%2C000 - 249%2C000%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 Diamond %28250%2C000%2B%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grads_of_Life_Function__c</picklist>
+        <values>
+            <fullName>Best Practice Provider</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMP Commitment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMP Inquires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMP Technical Assistance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Directory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROI%2FBusiness Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spokesperson</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Success Stories</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>HS_or_GED__c</picklist>
+        <values>
+            <fullName>GED Certificate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High School Diploma</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Higher_Ed_Summary__c</picklist>
+        <values>
+            <fullName>FT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not in school</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ISIS_Group__c</picklist>
+        <values>
+            <fullName>PACE - Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PACE - Treatment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Inactive_Reason__c</picklist>
+        <values>
+            <fullName>Mission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Ambassador Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Brother%2FSister Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Board Member Referral%2FIntroduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Channel Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Church</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College Fair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Partner Referral%2FIntroduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Corporate Partner Referral%2FIntroduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Craigs List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Donor%2FMentor%2FVolunteer Referral%2FIntro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend%2FCo-worker Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Garrett Moran</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gerald Chertavian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grads of Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idealist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Phone Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indeed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal National Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>John Bradley</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Market Research</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Year Up Site Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Print Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Probation Officer Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect Research Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Self %E2%80%93Generated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Television</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website Interest Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUPRO Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up Alumni Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up Staff Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up Student Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YearUp Web Site</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MSA__c</picklist>
+        <values>
+            <fullName>Atlanta%2C Roswell%2C Sandy Springs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miami%2C Ft Lauderdale%2C West Palm Beach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York%2C Newark%2C Jersey City</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Mailing_Address_Type__c</picklist>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PO Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Primary Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Secondary Home</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rev%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sis%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Participant_Funding_Group__c</picklist>
+        <values>
+            <fullName>Skillworks</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Method_Of_Contact__c</picklist>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Address__c</picklist>
+        <values>
+            <fullName>Additional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Race__c</picklist>
+        <values>
+            <fullName>Asian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Black or African American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hispanic or Latino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>I prefer not to say</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other%2FUnknown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Two or More Races</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>White</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Referrer_Type__c</picklist>
+        <values>
+            <fullName>Co-worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friend%2Ffamily member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guidance counselor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Principal%2Fteacher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Social worker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staff from a non-Year Up program</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up student%2Falum</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Source_to_Yearup__c</picklist>
+        <values>
+            <fullName>Billboard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Church</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>College</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facebook</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High School</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Idealist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indeed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instagram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job%2FCollege Fair</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LinkedIn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Newspaper%2FMagazine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Year Up website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presentation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Transportation Ad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Radio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scouting Soccer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Television</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Year Up Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Suffix__c</picklist>
+        <values>
+            <fullName>II</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>III</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MBA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PhD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>V</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sync_with_Marketo__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Lead__c</picklist>
+        <values>
+            <fullName>Student Prospect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visa_Status__c</picklist>
+        <values>
+            <fullName>Non-Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Permanent Resident</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Visa_Type__c</picklist>
+        <values>
+            <fullName>H-1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>H-14</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Volunteer_Interest__c</picklist>
+        <values>
+            <fullName>Academic Advisor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guest Speaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mentor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Volunteer_Site_Location__c</picklist>
+        <values>
+            <fullName>Alexandria%2C VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Arlington%2C VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Atlanta%2C GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Baltimore%2C MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boston%2C MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charlotte%2C NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chicago%2C IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concord%2C CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dallas%2C TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jacksonville%2C FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles%2C CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Menlo Park%2C CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miami%2C FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New York%2C NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philadelphia%2C PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phoenix%2C AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pittsburgh%2C PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Providence%2C RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco%2C CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Jose%2C CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seattle%2C WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tampa%2C FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wilmington%2C DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodbridge%2C VA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Word_of_mouth__c</picklist>
+        <values>
+            <fullName>Anti-Money Laundering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Service</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Advertising</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>QA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2014_Campaigns__c</picklist>
+        <values>
+            <fullName>GA 2014 Annual Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Breakfast Number 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Breakfast Number 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Leadership Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Mentors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Opportunity Ball</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Site Tours Visitors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Volunteers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2014 Walk for Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2013 House Party - Small - Spring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 %28National%29 Annual Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Annual Appeal - Fall%2FWinter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Annual Appeal - Spring%2FSummer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Basketball Tournament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Board Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Breakfast - Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Clothing Drives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Corporate Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Friends Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Golf Tournament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Graduation - July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Graduation- January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Guest Speaker - Class of January 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Guest Speaker Class of July 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 House Party - Big - Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Leadership Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Mentor Campaign - January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Mentor Campaign - July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Mock Interview Clinics - Spring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Public Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Scholars Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Supporters Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Tech Olympics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Volunteer list</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2014 Walk for Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ma 2014 Mock Interview Clinics - Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Alumni Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Annual Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Fashion %28Spring event%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Geek Gala 5%2E0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Graduation - January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Graduation - July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Power of One Networking Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Power of One Networking Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Power of One Networking Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2014 Power of One Networking Q4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Benefit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Board giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Golf event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Graduations %E2%80%93 Class 14 %E2%80%93 January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Graduations %E2%80%93 Class 15 %E2%80%93 July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 LC%2FAC giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 LC%2FAC party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Leadership breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2014 Walk for Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 2014 Annual Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 Class 19 Mentor Kickoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 Class 20 Mentor Kickoff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 Graduation Class 17 %E2%80%93 January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 Graduation Class 18 %E2%80%93 July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2014 Summer Party %28Placeholder%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Corporate Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Graduation Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Grantwriting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Major Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Mentors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 POEs %28House Parties%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Professional Olympics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Professional Olympics Sponsorship</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Scholars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2014 Supporters</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2015_Campaigns__c</picklist>
+        <values>
+            <fullName>CHI 2015 Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI 2015 Cocktail Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI 2015 Golf Outing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI 2015 Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI 2015 Leadership Council Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CHI 2015 Opportunity Breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Alumni Direct Mail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Alumni Esolicitation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Alumni Phonathon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Corporate Lunch n Learn 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Corporate Lunch n Learn 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Corporate Lunch n Learn 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Corporate Lunch n Learn 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Direct Mail 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Direct Mail 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Direct Mail 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Direct Mail 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Esolicitation 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Esolicitation 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Esolicitation 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Esolicitation 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Fall Phonathon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 House Party 8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Intern Manager Solicitation 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Intern Manager Solicitation 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 January Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 July Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Newsletter 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Newsletter 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Newsletter 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Newsletter 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Opportunity Breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Post Graduation Thank a Thon%3A January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Post Graduation Thank a Thon%3A July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Year End Phonaton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Your Dollars at Work Site Tour - 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Your Dollars at Work Site Tour - 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Your Dollars at Work Site Tour - 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA 2015 Your Dollars at Work Site Tour - 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 %28National%29 Annual Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Board Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Breakfast %3F Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Bridge Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Corporate Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Foundations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Golf Tournament</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Graduations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 House Party - Big Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Leadership Council PROSPECTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Mentor Campaign - January</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Mentor Campaign - July</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Merrimack Valley Champions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Michael VIP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Mock Interview Clinics - Fall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Mock Interview Clinics - Spring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Opportunity Walks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Professional Olympics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Public Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Scholars</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Small House Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Supporters Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Tech Olympics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Volunteer list</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA 2015 Walk for Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA%C2%A02015 Clothing Drive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Alumni Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Annual Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Development and Outreach Committee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Fashion Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Gala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Graduation %28January 2015%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Graduation %28July 2015%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Women Supporting Women</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Year Up Joint Revenue Team</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Year Up NCR Meeting Contacts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCR 2015 Young Professionals Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Blackstone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Board Giving</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Capital Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Fall Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Giving Tuesday</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Goldman Sachs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Leadership Council</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Leadership Council Party for Opportunity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Opportunity Breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY 2015 Spring Appeal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2015 C19 Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2015 C20 Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2015 C21 Mentor Kickoff Breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI 2015 Fall Gala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Alumni Week Give BIG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Class of January 2015 Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Class of July 2015 Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Innovation for Opportunity Breakfast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Professional Olympics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Scholar%27s Social - East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA 2015 Scholar%27s Social - West</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUBA 2015 January Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUBA 2015 July Graduation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUBA 2015 SV Campus Expansion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUBA 2015 YUBA%2FSV Gives 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YUBA Talent Forward Campaign</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2015_Close_Q__c</picklist>
+        <values>
+            <fullName>Q1 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3 2015</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4 2015</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2015_Restriction__c</picklist>
+        <values>
+            <fullName>Conditional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restricted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unrestricted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>X2015_Stage_Probability__c</picklist>
+        <values>
+            <fullName>Cultivate%3A Educate 10%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cultivate%3A Engage 30%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicit%3A Ask 60%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicit%3A On Hold 1%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicit%3A Verbal Commitment 90%25</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>stayclassy__Gender__c</picklist>
+        <values>
+            <fullName>Female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Male</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

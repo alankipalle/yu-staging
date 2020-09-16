@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Alumni_Update_Unique_URL__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is the url for form assembly for alumni to link to the survey</inlineHelpText>
+    <label>Alumni Update Unique URL</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

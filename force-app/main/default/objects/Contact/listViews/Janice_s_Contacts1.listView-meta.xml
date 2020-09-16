@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Janice_s_Contacts1</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npe01__AlternateEmail__c</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>npsp__Primary_Affiliation__c</columns>
+    <columns>Full_Name__c</columns>
+    <columns>CONTACT.TITLE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>jgrif</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>jgrif</value>
+    </filters>
+    <label>Janice&apos;s Contacts</label>
+</ListView>

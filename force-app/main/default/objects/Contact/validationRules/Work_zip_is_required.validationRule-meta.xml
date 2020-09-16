@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Work_zip_is_required</fullName>
+    <active>true</active>
+    <description>if street , city and state populated Zip will be required.</description>
+    <errorConditionFormula>AND(
+				RecordType.Name = &apos;Individual&apos;,
+				Account.RecordType.Name &lt;&gt; &apos;Household Account&apos;,
+				OtherCity  != null,
+    OtherStreet != null,
+				OtherState  != null,
+				OtherPostalCode = null
+)</errorConditionFormula>
+    <errorDisplayField>OtherPostalCode</errorDisplayField>
+    <errorMessage>Please enter zip code for the address</errorMessage>
+</ValidationRule>

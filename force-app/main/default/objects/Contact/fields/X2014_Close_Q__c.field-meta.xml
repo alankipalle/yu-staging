@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2014_Close_Q__c</fullName>
+    <externalId>false</externalId>
+    <label>2014 Close Q</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Q1 2014</fullName>
+                <default>false</default>
+                <label>Q1 2014</label>
+            </value>
+            <value>
+                <fullName>Q2 2014</fullName>
+                <default>false</default>
+                <label>Q2 2014</label>
+            </value>
+            <value>
+                <fullName>Q3 2014</fullName>
+                <default>false</default>
+                <label>Q3 2014</label>
+            </value>
+            <value>
+                <fullName>Q4 2014</fullName>
+                <default>false</default>
+                <label>Q4 2014</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

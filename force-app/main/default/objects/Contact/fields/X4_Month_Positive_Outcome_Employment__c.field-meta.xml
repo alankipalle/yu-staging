@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X4_Month_Positive_Outcome_Employment__c</fullName>
+    <description>Displays the number of associated Employment records that qualify as a 4 month positive outcome. This is calculated using a Roll Up Summary Helper roll up job.  Added by in by LG 6.23.15 per the business.
+Carlos Note: Not sure why LG logged in as ME and created this as ME had already created the exact same field with Recs on the label and api name. We can surely delete this.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the number of associated Employment records that qualify as a 4 month positive outcome. This is calculated using a Roll Up Summary Helper roll up job.</inlineHelpText>
+    <label>4 MonthPositiveOutcomeEmploymentRecsLG</label>
+    <length>2</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

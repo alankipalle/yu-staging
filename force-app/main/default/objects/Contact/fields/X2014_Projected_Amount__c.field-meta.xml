@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2014_Projected_Amount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(X2014_Probability__c ,&quot;Cultivate: Educate 10%&quot;),  0.1 * X2014_Ask_Amount__c,
+ IF(ISPICKVAL( X2014_Probability__c ,&quot;Cultivate: Engage 30%&quot;), 0.3*  X2014_Ask_Amount__c ,
+ IF(ISPICKVAL( X2014_Probability__c ,&quot;Solicit: Ask 60%&quot;), 0.6 * X2014_Ask_Amount__c ,0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>2014 Projected Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

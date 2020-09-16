@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>AddtoNetDocs</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>AddtoNetDocs</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>https://vault.netvoyage.com/neWeb2/sf/lookupImp.aspx?sfUrl={!API.Partner_Server_URL_70}&amp;sfSession={!API.Session_ID}&amp;id={!Contact.Id}&amp;key={!Contact.Name}&amp;parentkey={!Contact.Cohort__c}</url>
+</WebLink>

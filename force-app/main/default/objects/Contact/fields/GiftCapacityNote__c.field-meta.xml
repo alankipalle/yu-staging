@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>GiftCapacityNote__c</fullName>
+    <description>The Gift Capacity Note field is used by the Prospect Research team to add any additional information that may have been determined through screening or in the process of determining the gift capacity.</description>
+    <externalId>false</externalId>
+    <label>Gift Capacity Note</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

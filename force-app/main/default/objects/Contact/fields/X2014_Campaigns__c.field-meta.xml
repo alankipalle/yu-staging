@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2014_Campaigns__c</fullName>
+    <description>Used for 2014 forecasting</description>
+    <externalId>false</externalId>
+    <label>2014 Campaign</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GA 2014 Annual Appeal</fullName>
+                <default>false</default>
+                <label>GA 2014 Annual Appeal</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Breakfast Number 1</fullName>
+                <default>false</default>
+                <label>GA 2014 Breakfast Number 1</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Breakfast Number 2</fullName>
+                <default>false</default>
+                <label>GA 2014 Breakfast Number 2</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Leadership Council</fullName>
+                <default>false</default>
+                <label>GA 2014 Leadership Council</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Mentors</fullName>
+                <default>false</default>
+                <label>GA 2014 Mentors</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Opportunity Ball</fullName>
+                <default>false</default>
+                <label>GA 2014 Opportunity Ball</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Site Tours Visitors</fullName>
+                <default>false</default>
+                <label>GA 2014 Site Tours Visitors</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Volunteers</fullName>
+                <default>false</default>
+                <label>GA 2014 Volunteers</label>
+            </value>
+            <value>
+                <fullName>GA 2014 Walk for Opportunity</fullName>
+                <default>false</default>
+                <label>GA 2014 Walk for Opportunity</label>
+            </value>
+            <value>
+                <fullName>IL 2014 Bridge to our Future</fullName>
+                <default>false</default>
+                <label>IL 2014 Bridge to our Future</label>
+            </value>
+            <value>
+                <fullName>IL 2014 Cocktail Event</fullName>
+                <default>false</default>
+                <label>IL 2014 Cocktail Event</label>
+            </value>
+            <value>
+                <fullName>IL 2014 Golf Outing</fullName>
+                <default>false</default>
+                <label>IL 2014 Golf Outing</label>
+            </value>
+            <value>
+                <fullName>IL 2014 House Party</fullName>
+                <default>false</default>
+                <label>IL 2014 House Party</label>
+            </value>
+            <value>
+                <fullName>IL 2014 January Graduation</fullName>
+                <default>false</default>
+                <label>IL 2014 January Graduation</label>
+            </value>
+            <value>
+                <fullName>IL 2014 July Graduation</fullName>
+                <default>false</default>
+                <label>IL 2014 July Graduation</label>
+            </value>
+            <value>
+                <fullName>IL 2014 Leadership Council Networking Event</fullName>
+                <default>false</default>
+                <label>IL 2014 Leadership Council Networking Event</label>
+            </value>
+            <value>
+                <fullName>MA 2013 House Party - Small - Spring</fullName>
+                <default>false</default>
+                <label>MA 2013 House Party - Small - Spring</label>
+            </value>
+            <value>
+                <fullName>MA 2014 (National) Annual Report</fullName>
+                <default>false</default>
+                <label>MA 2014 (National) Annual Report</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Annual Appeal - Fall/Winter</fullName>
+                <default>false</default>
+                <label>MA 2014 Annual Appeal - Fall/Winter</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Annual Appeal - Spring/Summer</fullName>
+                <default>false</default>
+                <label>MA 2014 Annual Appeal - Spring/Summer</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Basketball Tournament</fullName>
+                <default>false</default>
+                <label>MA 2014 Basketball Tournament</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Board Giving</fullName>
+                <default>false</default>
+                <label>MA 2014 Board Giving</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Breakfast - Fall</fullName>
+                <default>false</default>
+                <label>MA 2014 Breakfast - Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Clothing Drives</fullName>
+                <default>false</default>
+                <label>MA 2014 Clothing Drives</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Corporate Giving</fullName>
+                <default>false</default>
+                <label>MA 2014 Corporate Giving</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Foundations</fullName>
+                <default>false</default>
+                <label>MA 2014 Foundations</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Friends Campaign</fullName>
+                <default>false</default>
+                <label>MA 2014 Friends Campaign</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Golf Tournament</fullName>
+                <default>false</default>
+                <label>MA 2014 Golf Tournament</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Graduation- January</fullName>
+                <default>false</default>
+                <label>MA 2014 Graduation- January</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Graduation - July</fullName>
+                <default>false</default>
+                <label>MA 2014 Graduation - July</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Guest Speaker - Class of January 2015</fullName>
+                <default>false</default>
+                <label>MA 2014 Guest Speaker - Class of January 2015</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Guest Speaker Class of July 2015</fullName>
+                <default>false</default>
+                <label>MA 2014 Guest Speaker Class of July 2015</label>
+            </value>
+            <value>
+                <fullName>MA 2014 House Party - Big - Fall</fullName>
+                <default>false</default>
+                <label>MA 2014 House Party - Big - Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Leadership Council</fullName>
+                <default>false</default>
+                <label>MA 2014 Leadership Council</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Mentor Campaign - January</fullName>
+                <default>false</default>
+                <label>MA 2014 Mentor Campaign - January</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Mentor Campaign - July</fullName>
+                <default>false</default>
+                <label>MA 2014 Mentor Campaign - July</label>
+            </value>
+            <value>
+                <fullName>Ma 2014 Mock Interview Clinics - Fall</fullName>
+                <default>false</default>
+                <label>Ma 2014 Mock Interview Clinics - Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Mock Interview Clinics - Spring</fullName>
+                <default>false</default>
+                <label>MA 2014 Mock Interview Clinics - Spring</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Public Funding</fullName>
+                <default>false</default>
+                <label>MA 2014 Public Funding</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Scholars Campaign</fullName>
+                <default>false</default>
+                <label>MA 2014 Scholars Campaign</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Supporters Campaign</fullName>
+                <default>false</default>
+                <label>MA 2014 Supporters Campaign</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Tech Olympics</fullName>
+                <default>false</default>
+                <label>MA 2014 Tech Olympics</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Volunteer list</fullName>
+                <default>false</default>
+                <label>MA 2014 Volunteer list</label>
+            </value>
+            <value>
+                <fullName>MA 2014 Walk for Opportunity</fullName>
+                <default>false</default>
+                <label>MA 2014 Walk for Opportunity</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Alumni Giving</fullName>
+                <default>false</default>
+                <label>NCR 2014 Alumni Giving</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Annual Appeal</fullName>
+                <default>false</default>
+                <label>NCR 2014 Annual Appeal</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Fashion (Spring event)</fullName>
+                <default>false</default>
+                <label>NCR 2014 Fashion (Spring event)</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Geek Gala 5.0</fullName>
+                <default>false</default>
+                <label>NCR 2014 Geek Gala 5.0</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Graduation - January</fullName>
+                <default>false</default>
+                <label>NCR 2014 Graduation - January</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Graduation - July</fullName>
+                <default>false</default>
+                <label>NCR 2014 Graduation - July</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Power of One Networking Q1</fullName>
+                <default>false</default>
+                <label>NCR 2014 Power of One Networking Q1</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Power of One Networking Q2</fullName>
+                <default>false</default>
+                <label>NCR 2014 Power of One Networking Q2</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Power of One Networking Q3</fullName>
+                <default>false</default>
+                <label>NCR 2014 Power of One Networking Q3</label>
+            </value>
+            <value>
+                <fullName>NCR 2014 Power of One Networking Q4</fullName>
+                <default>false</default>
+                <label>NCR 2014 Power of One Networking Q4</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Benefit</fullName>
+                <default>false</default>
+                <label>NY 2014 Benefit</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Board giving</fullName>
+                <default>false</default>
+                <label>NY 2014 Board giving</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Golf event</fullName>
+                <default>false</default>
+                <label>NY 2014 Golf event</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Graduations – Class 14 – January</fullName>
+                <default>false</default>
+                <label>NY 2014 Graduations – Class 14 – January</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Graduations – Class 15 – July</fullName>
+                <default>false</default>
+                <label>NY 2014 Graduations – Class 15 – July</label>
+            </value>
+            <value>
+                <fullName>NY 2014 LC/AC giving</fullName>
+                <default>false</default>
+                <label>NY 2014 LC/AC giving</label>
+            </value>
+            <value>
+                <fullName>NY 2014 LC/AC party</fullName>
+                <default>false</default>
+                <label>NY 2014 LC/AC party</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Leadership breakfast</fullName>
+                <default>false</default>
+                <label>NY 2014 Leadership breakfast</label>
+            </value>
+            <value>
+                <fullName>NY 2014 Walk for Opportunity</fullName>
+                <default>false</default>
+                <label>NY 2014 Walk for Opportunity</label>
+            </value>
+            <value>
+                <fullName>RI 2014 2014 Annual Party</fullName>
+                <default>false</default>
+                <label>RI 2014 2014 Annual Party</label>
+            </value>
+            <value>
+                <fullName>RI 2014 Class 19 Mentor Kickoff</fullName>
+                <default>false</default>
+                <label>RI 2014 Class 19 Mentor Kickoff</label>
+            </value>
+            <value>
+                <fullName>RI 2014 Class 20 Mentor Kickoff</fullName>
+                <default>false</default>
+                <label>RI 2014 Class 20 Mentor Kickoff</label>
+            </value>
+            <value>
+                <fullName>RI 2014 Graduation Class 17 – January</fullName>
+                <default>false</default>
+                <label>RI 2014 Graduation Class 17 – January</label>
+            </value>
+            <value>
+                <fullName>RI 2014 Graduation Class 18 – July</fullName>
+                <default>false</default>
+                <label>RI 2014 Graduation Class 18 – July</label>
+            </value>
+            <value>
+                <fullName>RI 2014 Summer Party (Placeholder)</fullName>
+                <default>false</default>
+                <label>RI 2014 Summer Party (Placeholder)</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Corporate Giving</fullName>
+                <default>false</default>
+                <label>WA 2014 Corporate Giving</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Friends</fullName>
+                <default>false</default>
+                <label>WA 2014 Friends</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Graduation Sponsorship</fullName>
+                <default>false</default>
+                <label>WA 2014 Graduation Sponsorship</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Grantwriting</fullName>
+                <default>false</default>
+                <label>WA 2014 Grantwriting</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Major Gifts</fullName>
+                <default>false</default>
+                <label>WA 2014 Major Gifts</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Mentors</fullName>
+                <default>false</default>
+                <label>WA 2014 Mentors</label>
+            </value>
+            <value>
+                <fullName>WA 2014 POEs (House Parties)</fullName>
+                <default>false</default>
+                <label>WA 2014 POEs (House Parties)</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Professional Olympics</fullName>
+                <default>false</default>
+                <label>WA 2014 Professional Olympics</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Professional Olympics Sponsorship</fullName>
+                <default>false</default>
+                <label>WA 2014 Professional Olympics Sponsorship</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Scholars</fullName>
+                <default>false</default>
+                <label>WA 2014 Scholars</label>
+            </value>
+            <value>
+                <fullName>WA 2014 Supporters</fullName>
+                <default>false</default>
+                <label>WA 2014 Supporters</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Next_Birthday__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ /* special case for Leap Day birthdays. Good until 2100 */
+ AND(month(Birthdate) = 2, day(Birthdate) = 29), 
+    IF(TODAY() &gt;= DATE(year(today()), 3, 1), 
+     IF(MOD(YEAR(TODAY()) + 1 ,4) = 0,  /* Today is 3/1 or later; is next year a leap year? */
+      DATE(YEAR(TODAY())+1, 2, 29),
+      DATE(YEAR(TODAY())+1, 2, 28)),
+     IF(MOD(YEAR(TODAY()) ,4) = 0,  /* Today is less than 3/1; is this year a leap year? */
+      DATE(YEAR(TODAY()), 2, 29),
+      DATE(YEAR(TODAY()), 2, 28))
+     ),
+    
+ /* normal non-leap year case: */
+ DATE(
+   IF(TODAY()&lt;=date(year(today()),month(Birthdate),DAY(Birthdate)),
+    YEAR(TODAY()),
+    YEAR(TODAY())+1
+   ),
+ month(Birthdate),DAY(Birthdate))
+ )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Next Birthday</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

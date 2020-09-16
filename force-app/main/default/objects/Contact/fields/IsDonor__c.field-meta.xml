@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>IsDonor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This will be checked for any contact who is prospect donor or has already made donation and has a household account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This will be checked for any contact who is prospect donor or has already made donation and has a household accoun</inlineHelpText>
+    <label>IsDonor</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

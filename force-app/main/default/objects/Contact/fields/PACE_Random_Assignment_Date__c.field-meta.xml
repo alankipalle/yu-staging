@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>PACE_Random_Assignment_Date__c</fullName>
+    <description>Date of random assignment for PACE control group members. Visibility should be restricted to system administrators and the director of evaluation.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Date of random assignment for PACE control group members. Visibility should be restricted to system administrators and the director of evaluation.</inlineHelpText>
+    <label>PACE Random Assignment Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

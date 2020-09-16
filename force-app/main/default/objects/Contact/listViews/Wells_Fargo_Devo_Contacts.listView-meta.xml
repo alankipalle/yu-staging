@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Wells_Fargo_Devo_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>npsp__Primary_Affiliation__c</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.ADDRESS2_CITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>EmployerAccount__c</field>
+        <operation>contains</operation>
+        <value>Wells Fargo</value>
+    </filters>
+    <filters>
+        <field>CONTACT.TITLE</field>
+        <operation>contains</operation>
+        <value>Community</value>
+    </filters>
+    <label>Wells Fargo Devo Contacts</label>
+</ListView>

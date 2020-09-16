@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Current_Admissions_Cohort__c</fullName>
+    <description>Determines if the prospective student is in the current admissions cohort. If the Most Recent Cohort field and the Current Admissions Cohort field on the associated site record are the same returns a &quot;Yes&quot;, if not &quot;No&quot;.</description>
+    <externalId>false</externalId>
+    <formula>IF( Cohort__c = TEXT( Site_Location__r.Current_Admissions_Cohort__c),&quot;Yes&quot;,&quot;No&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Determines if the prospective student is in the current admissions cohort. If the Most Recent Cohort field and the Current Admissions Cohort field on the associated site record are the same returns a &quot;Yes&quot;, if not &quot;No&quot;.</inlineHelpText>
+    <label>Current Admissions Cohort?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

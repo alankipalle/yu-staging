@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Priority_Rating__c</fullName>
+    <description>Undeleted by LG for the business 6.23.15, added back to the Development page layout</description>
+    <externalId>false</externalId>
+    <inlineHelpText>High (H):  Requires immediate action.  
+Medium (M):  Requires action after all the Highs or within the next month
+Low (L):  Not sure if this a lead to pursue, or lowest priority</inlineHelpText>
+    <label>Priority Rating</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Top 25</fullName>
+                <default>false</default>
+                <label>Top 25</label>
+            </value>
+            <value>
+                <fullName>Next 50</fullName>
+                <default>false</default>
+                <label>Next 50</label>
+            </value>
+            <value>
+                <fullName>Long Range</fullName>
+                <default>false</default>
+                <label>Long Range</label>
+            </value>
+            <value>
+                <fullName>1 - High</fullName>
+                <default>false</default>
+                <label>1 - High</label>
+            </value>
+            <value>
+                <fullName>2 - Medium</fullName>
+                <default>false</default>
+                <label>2 - Medium</label>
+            </value>
+            <value>
+                <fullName>3 - Low</fullName>
+                <default>false</default>
+                <label>3 - Low</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

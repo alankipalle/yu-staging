@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>ProspectiveStudents</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.PHONE4</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>Most_Recent_Engagement__c</columns>
+    <columns>MRE_Pipeline_stage__c</columns>
+    <columns>Online_Campaign__c</columns>
+    <columns>Online_Medium__c</columns>
+    <columns>Online_Source__c</columns>
+    <columns>MRE_SITE__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Word_of_mouth__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Prospect,Contact.Participant</value>
+    </filters>
+    <filters>
+        <field>MRStatus_formula__c</field>
+        <operation>equals</operation>
+        <value>Referred Out</value>
+    </filters>
+    <filters>
+        <field>ADP_Number__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Prospective Students</label>
+    <sharedTo>
+        <group>Admissions_Users</group>
+    </sharedTo>
+</ListView>

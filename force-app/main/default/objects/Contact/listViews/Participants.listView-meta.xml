@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Participants</fullName>
+    <columns>Site_Location__c</columns>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>CONTACT.BIRTHDATE</columns>
+    <columns>stayclassy__Shirt_Size__c</columns>
+    <columns>Cohort__c</columns>
+    <columns>Most_Recent_Status__c</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Participant</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Status__c</field>
+        <operation>equals</operation>
+        <value>Enrolled</value>
+    </filters>
+    <label>Participants</label>
+</ListView>

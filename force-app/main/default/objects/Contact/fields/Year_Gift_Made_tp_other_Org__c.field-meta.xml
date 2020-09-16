@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Year_Gift_Made_tp_other_Org__c</fullName>
+    <description>Year that the gift was made for the largest gift to another organization</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Year that the gift was made for the largest gift to another organization</inlineHelpText>
+    <label>Year Gift Made to Other Org</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
