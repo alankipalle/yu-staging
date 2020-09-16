@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Last_Verified_Date__c</fullName>
+    <description>Rollup field: of this student&apos;s current (no end date) employment and higher ed records, the OLDEST last verified date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Rollup field: of this student&apos;s current (no end date) employment and higher ed records, the oldest last verified date.</inlineHelpText>
+    <label>CAS Last Verified Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

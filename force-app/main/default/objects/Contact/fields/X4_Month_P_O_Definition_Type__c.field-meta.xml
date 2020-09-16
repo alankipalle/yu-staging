@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X4_Month_P_O_Definition_Type__c</fullName>
+    <description>This field is used in report formula fields to determine whether the positive outcomes calculation should include a cap for un-employed students in school and if so whether to use the Core cap of 10% or PTC cap of 20% for pre-July 2015 cohorts.</description>
+    <externalId>false</externalId>
+    <formula>IF( Most_Recent_Cohort_Date_Value__c &gt;= DATE(2015,7,1),1,
+IF(AND(Most_Recent_Cohort_Date_Value__c &lt; DATE(2015,7,1), OR(Site__c = &quot;MA&quot;, Site__c = &quot;IL&quot;, Site__c = &quot;GA&quot;,Site__c = &quot;NY&quot;,Site__c = &quot;RI&quot;,Site__c = &quot;SF&quot;,Site__c = &quot;WA&quot;,Site__c = &quot;NCR&quot;)),2,3))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>This field is used in report formula fields to determine whether the positive outcomes calculation should include a cap for un-employed students in school and if so whether to use the Core cap of 10% or PTC cap of 20% for pre-July 2015 cohorts.</inlineHelpText>
+    <label>4 Month P.O. Definition Type</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

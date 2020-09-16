@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Validated_Classy_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Field to be checked by Devo after they have validated that the contact created by classy is likely not a duplicate to existing salesforce contacts</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Validated that Classy Contact not likely a Duplicate?</inlineHelpText>
+    <label>Validated Classy Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

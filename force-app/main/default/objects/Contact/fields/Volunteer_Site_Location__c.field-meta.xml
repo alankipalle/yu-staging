@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Volunteer_Site_Location__c</fullName>
+    <description>The preferred Volunteer Site Location for the volunteer contact.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The preferred Volunteer Site Location for the volunteer contact.</inlineHelpText>
+    <label>Volunteer Site Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Phoenix, AZ</fullName>
+                <default>false</default>
+                <label>Phoenix, AZ</label>
+            </value>
+            <value>
+                <fullName>Concord, CA</fullName>
+                <default>false</default>
+                <label>Concord, CA</label>
+            </value>
+            <value>
+                <fullName>Menlo Park, CA</fullName>
+                <default>false</default>
+                <label>Menlo Park, CA</label>
+            </value>
+            <value>
+                <fullName>San Francisco, CA</fullName>
+                <default>false</default>
+                <label>San Francisco, CA</label>
+            </value>
+            <value>
+                <fullName>San Jose, CA</fullName>
+                <default>false</default>
+                <label>San Jose, CA</label>
+            </value>
+            <value>
+                <fullName>Los Angeles, CA</fullName>
+                <default>false</default>
+                <label>Los Angeles, CA</label>
+            </value>
+            <value>
+                <fullName>Wilmington, DE</fullName>
+                <default>false</default>
+                <label>Wilmington, DE</label>
+            </value>
+            <value>
+                <fullName>Jacksonville, FL</fullName>
+                <default>false</default>
+                <label>Jacksonville, FL</label>
+            </value>
+            <value>
+                <fullName>Miami, FL</fullName>
+                <default>false</default>
+                <label>Miami, FL</label>
+            </value>
+            <value>
+                <fullName>Tampa, FL</fullName>
+                <default>false</default>
+                <label>Tampa, FL</label>
+            </value>
+            <value>
+                <fullName>Atlanta, GA</fullName>
+                <default>false</default>
+                <label>Atlanta, GA</label>
+            </value>
+            <value>
+                <fullName>Chicago, IL</fullName>
+                <default>false</default>
+                <label>Chicago, IL</label>
+            </value>
+            <value>
+                <fullName>Boston, MA</fullName>
+                <default>false</default>
+                <label>Boston, MA</label>
+            </value>
+            <value>
+                <fullName>Baltimore, MD</fullName>
+                <default>false</default>
+                <label>Baltimore, MD</label>
+            </value>
+            <value>
+                <fullName>Charlotte, NC</fullName>
+                <default>false</default>
+                <label>Charlotte, NC</label>
+            </value>
+            <value>
+                <fullName>New York, NY</fullName>
+                <default>false</default>
+                <label>New York, NY</label>
+            </value>
+            <value>
+                <fullName>Philadelphia, PA</fullName>
+                <default>false</default>
+                <label>Philadelphia, PA</label>
+            </value>
+            <value>
+                <fullName>Pittsburgh, PA</fullName>
+                <default>false</default>
+                <label>Pittsburgh, PA</label>
+            </value>
+            <value>
+                <fullName>Providence, RI</fullName>
+                <default>false</default>
+                <label>Providence, RI</label>
+            </value>
+            <value>
+                <fullName>Dallas, TX</fullName>
+                <default>false</default>
+                <label>Dallas, TX</label>
+            </value>
+            <value>
+                <fullName>Alexandria, VA</fullName>
+                <default>false</default>
+                <label>Alexandria, VA</label>
+            </value>
+            <value>
+                <fullName>Arlington, VA</fullName>
+                <default>false</default>
+                <label>Arlington, VA</label>
+            </value>
+            <value>
+                <fullName>Woodbridge, VA</fullName>
+                <default>false</default>
+                <label>Woodbridge, VA</label>
+            </value>
+            <value>
+                <fullName>Seattle, WA</fullName>
+                <default>false</default>
+                <label>Seattle, WA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

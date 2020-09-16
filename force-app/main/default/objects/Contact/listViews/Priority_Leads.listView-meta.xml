@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Priority_Leads</fullName>
+    <booleanFilter>1 OR 2 OR 3</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>CONTACT.LEAD_SOURCE</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>Development_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.LEAD_SOURCE</field>
+        <operation>equals</operation>
+        <value>Garrett Moran,Gerald Chertavian</value>
+    </filters>
+    <filters>
+        <field>Development_Owner__c</field>
+        <operation>startsWith</operation>
+        <value>Garrett</value>
+    </filters>
+    <filters>
+        <field>Development_Owner__c</field>
+        <operation>startsWith</operation>
+        <value>Gerald</value>
+    </filters>
+    <label>Priority Leads</label>
+    <sharedTo>
+        <group>YearUp_SFDC_Admins</group>
+    </sharedTo>
+</ListView>

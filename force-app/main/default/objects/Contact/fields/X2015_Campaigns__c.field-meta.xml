@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2015_Campaigns__c</fullName>
+    <externalId>false</externalId>
+    <label>2015 Campaigns</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CHI 2015 Campaign</fullName>
+                <default>false</default>
+                <label>CHI 2015 Campaign</label>
+            </value>
+            <value>
+                <fullName>CHI 2015 Cocktail Event</fullName>
+                <default>false</default>
+                <label>CHI 2015 Cocktail Event</label>
+            </value>
+            <value>
+                <fullName>CHI 2015 Golf Outing</fullName>
+                <default>false</default>
+                <label>CHI 2015 Golf Outing</label>
+            </value>
+            <value>
+                <fullName>CHI 2015 Graduation</fullName>
+                <default>false</default>
+                <label>CHI 2015 Graduation</label>
+            </value>
+            <value>
+                <fullName>CHI 2015 Leadership Council Event</fullName>
+                <default>false</default>
+                <label>CHI 2015 Leadership Council Event</label>
+            </value>
+            <value>
+                <fullName>CHI 2015 Opportunity Breakfast</fullName>
+                <default>false</default>
+                <label>CHI 2015 Opportunity Breakfast</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Alumni Direct Mail</fullName>
+                <default>false</default>
+                <label>GA 2015 Alumni Direct Mail</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Alumni Esolicitation</fullName>
+                <default>false</default>
+                <label>GA 2015 Alumni Esolicitation</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Alumni Phonathon</fullName>
+                <default>false</default>
+                <label>GA 2015 Alumni Phonathon</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Corporate Lunch n Learn 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Corporate Lunch n Learn 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Corporate Lunch n Learn 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Corporate Lunch n Learn 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Corporate Lunch n Learn 3</fullName>
+                <default>false</default>
+                <label>GA 2015 Corporate Lunch n Learn 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Corporate Lunch n Learn 4</fullName>
+                <default>false</default>
+                <label>GA 2015 Corporate Lunch n Learn 4</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Direct Mail 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Direct Mail 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Direct Mail 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Direct Mail 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Direct Mail 3</fullName>
+                <default>false</default>
+                <label>GA 2015 Direct Mail 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Direct Mail 4</fullName>
+                <default>false</default>
+                <label>GA 2015 Direct Mail 4</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Esolicitation 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Esolicitation 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Esolicitation 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Esolicitation 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Esolicitation 3</fullName>
+                <default>false</default>
+                <label>GA 2015 Esolicitation 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Esolicitation 4</fullName>
+                <default>false</default>
+                <label>GA 2015 Esolicitation 4</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Fall Phonathon</fullName>
+                <default>false</default>
+                <label>GA 2015 Fall Phonathon</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 1</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 2</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 3</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 4</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 4</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 5</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 5</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 6</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 6</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 7</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 7</label>
+            </value>
+            <value>
+                <fullName>GA 2015 House Party 8</fullName>
+                <default>false</default>
+                <label>GA 2015 House Party 8</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Intern Manager Solicitation 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Intern Manager Solicitation 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Intern Manager Solicitation 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Intern Manager Solicitation 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 January Graduation</fullName>
+                <default>false</default>
+                <label>GA 2015 January Graduation</label>
+            </value>
+            <value>
+                <fullName>GA 2015 July Graduation</fullName>
+                <default>false</default>
+                <label>GA 2015 July Graduation</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Newsletter 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Newsletter 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Newsletter 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Newsletter 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Newsletter 3</fullName>
+                <default>false</default>
+                <label>GA 2015 Newsletter 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Newsletter 4</fullName>
+                <default>false</default>
+                <label>GA 2015 Newsletter 4</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Opportunity Breakfast</fullName>
+                <default>false</default>
+                <label>GA 2015 Opportunity Breakfast</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Post Graduation Thank a Thon: January</fullName>
+                <default>false</default>
+                <label>GA 2015 Post Graduation Thank a Thon: January</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Post Graduation Thank a Thon: July</fullName>
+                <default>false</default>
+                <label>GA 2015 Post Graduation Thank a Thon: July</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Year End Phonaton</fullName>
+                <default>false</default>
+                <label>GA 2015 Year End Phonaton</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Your Dollars at Work Site Tour - 1</fullName>
+                <default>false</default>
+                <label>GA 2015 Your Dollars at Work Site Tour - 1</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Your Dollars at Work Site Tour - 2</fullName>
+                <default>false</default>
+                <label>GA 2015 Your Dollars at Work Site Tour - 2</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Your Dollars at Work Site Tour - 3</fullName>
+                <default>false</default>
+                <label>GA 2015 Your Dollars at Work Site Tour - 3</label>
+            </value>
+            <value>
+                <fullName>GA 2015 Your Dollars at Work Site Tour - 4</fullName>
+                <default>false</default>
+                <label>GA 2015 Your Dollars at Work Site Tour - 4</label>
+            </value>
+            <value>
+                <fullName>MA 2015 (National) Annual Report</fullName>
+                <default>false</default>
+                <label>MA 2015 (National) Annual Report</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Board Giving</fullName>
+                <default>false</default>
+                <label>MA 2015 Board Giving</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Breakfast ? Fall</fullName>
+                <default>false</default>
+                <label>MA 2015 Breakfast ? Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Bridge Campaign</fullName>
+                <default>false</default>
+                <label>MA 2015 Bridge Campaign</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Clothing Drive</fullName>
+                <default>false</default>
+                <label>MA 2015 Clothing Drive</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Corporate Giving</fullName>
+                <default>false</default>
+                <label>MA 2015 Corporate Giving</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Foundations</fullName>
+                <default>false</default>
+                <label>MA 2015 Foundations</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Friends</fullName>
+                <default>false</default>
+                <label>MA 2015 Friends</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Golf Tournament</fullName>
+                <default>false</default>
+                <label>MA 2015 Golf Tournament</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Graduations</fullName>
+                <default>false</default>
+                <label>MA 2015 Graduations</label>
+            </value>
+            <value>
+                <fullName>MA 2015 House Party - Big Fall</fullName>
+                <default>false</default>
+                <label>MA 2015 House Party - Big Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Leadership Council PROSPECTS</fullName>
+                <default>false</default>
+                <label>MA 2015 Leadership Council PROSPECTS</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Mentor Campaign - January</fullName>
+                <default>false</default>
+                <label>MA 2015 Mentor Campaign - January</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Mentor Campaign - July</fullName>
+                <default>false</default>
+                <label>MA 2015 Mentor Campaign - July</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Merrimack Valley Champions</fullName>
+                <default>false</default>
+                <label>MA 2015 Merrimack Valley Champions</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Michael VIP</fullName>
+                <default>false</default>
+                <label>MA 2015 Michael VIP</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Mock Interview Clinics - Fall</fullName>
+                <default>false</default>
+                <label>MA 2015 Mock Interview Clinics - Fall</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Mock Interview Clinics - Spring</fullName>
+                <default>false</default>
+                <label>MA 2015 Mock Interview Clinics - Spring</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Opportunity Walks</fullName>
+                <default>false</default>
+                <label>MA 2015 Opportunity Walks</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Professional Olympics</fullName>
+                <default>false</default>
+                <label>MA 2015 Professional Olympics</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Public Funding</fullName>
+                <default>false</default>
+                <label>MA 2015 Public Funding</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Scholars</fullName>
+                <default>false</default>
+                <label>MA 2015 Scholars</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Small House Party</fullName>
+                <default>false</default>
+                <label>MA 2015 Small House Party</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Supporters Campaign</fullName>
+                <default>false</default>
+                <label>MA 2015 Supporters Campaign</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Tech Olympics</fullName>
+                <default>false</default>
+                <label>MA 2015 Tech Olympics</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Volunteer list</fullName>
+                <default>false</default>
+                <label>MA 2015 Volunteer list</label>
+            </value>
+            <value>
+                <fullName>MA 2015 Walk for Opportunity</fullName>
+                <default>false</default>
+                <label>MA 2015 Walk for Opportunity</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Alumni Giving</fullName>
+                <default>false</default>
+                <label>NCR 2015 Alumni Giving</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Annual Appeal</fullName>
+                <default>false</default>
+                <label>NCR 2015 Annual Appeal</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Development and Outreach Committee</fullName>
+                <default>false</default>
+                <label>NCR 2015 Development and Outreach Committee</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Fashion Show</fullName>
+                <default>false</default>
+                <label>NCR 2015 Fashion Show</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Gala</fullName>
+                <default>false</default>
+                <label>NCR 2015 Gala</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Graduation (January 2015)</fullName>
+                <default>false</default>
+                <label>NCR 2015 Graduation (January 2015)</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Graduation (July 2015)</fullName>
+                <default>false</default>
+                <label>NCR 2015 Graduation (July 2015)</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Women Supporting Women</fullName>
+                <default>false</default>
+                <label>NCR 2015 Women Supporting Women</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Year Up Joint Revenue Team</fullName>
+                <default>false</default>
+                <label>NCR 2015 Year Up Joint Revenue Team</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Year Up NCR Meeting Contacts</fullName>
+                <default>false</default>
+                <label>NCR 2015 Year Up NCR Meeting Contacts</label>
+            </value>
+            <value>
+                <fullName>NCR 2015 Young Professionals Network</fullName>
+                <default>false</default>
+                <label>NCR 2015 Young Professionals Network</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Blackstone</fullName>
+                <default>false</default>
+                <label>NY 2015 Blackstone</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Board Giving</fullName>
+                <default>false</default>
+                <label>NY 2015 Board Giving</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Capital Campaign</fullName>
+                <default>false</default>
+                <label>NY 2015 Capital Campaign</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Fall Appeal</fullName>
+                <default>false</default>
+                <label>NY 2015 Fall Appeal</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Giving Tuesday</fullName>
+                <default>false</default>
+                <label>NY 2015 Giving Tuesday</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Goldman Sachs</fullName>
+                <default>false</default>
+                <label>NY 2015 Goldman Sachs</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Leadership Council</fullName>
+                <default>false</default>
+                <label>NY 2015 Leadership Council</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Leadership Council Party for Opportunity</fullName>
+                <default>false</default>
+                <label>NY 2015 Leadership Council Party for Opportunity</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Opportunity Breakfast</fullName>
+                <default>false</default>
+                <label>NY 2015 Opportunity Breakfast</label>
+            </value>
+            <value>
+                <fullName>NY 2015 Spring Appeal</fullName>
+                <default>false</default>
+                <label>NY 2015 Spring Appeal</label>
+            </value>
+            <value>
+                <fullName>RI 2015 C19 Graduation</fullName>
+                <default>false</default>
+                <label>RI 2015 C19 Graduation</label>
+            </value>
+            <value>
+                <fullName>RI 2015 C20 Graduation</fullName>
+                <default>false</default>
+                <label>RI 2015 C20 Graduation</label>
+            </value>
+            <value>
+                <fullName>RI 2015 C21 Mentor Kickoff Breakfast</fullName>
+                <default>false</default>
+                <label>RI 2015 C21 Mentor Kickoff Breakfast</label>
+            </value>
+            <value>
+                <fullName>RI 2015 Fall Gala</fullName>
+                <default>false</default>
+                <label>RI 2015 Fall Gala</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Alumni Week Give BIG</fullName>
+                <default>false</default>
+                <label>WA 2015 Alumni Week Give BIG</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Class of January 2015 Graduation</fullName>
+                <default>false</default>
+                <label>WA 2015 Class of January 2015 Graduation</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Class of July 2015 Graduation</fullName>
+                <default>false</default>
+                <label>WA 2015 Class of July 2015 Graduation</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Innovation for Opportunity Breakfast</fullName>
+                <default>false</default>
+                <label>WA 2015 Innovation for Opportunity Breakfast</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Professional Olympics</fullName>
+                <default>false</default>
+                <label>WA 2015 Professional Olympics</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Scholar&apos;s Social - East</fullName>
+                <default>false</default>
+                <label>WA 2015 Scholar&apos;s Social - East</label>
+            </value>
+            <value>
+                <fullName>WA 2015 Scholar&apos;s Social - West</fullName>
+                <default>false</default>
+                <label>WA 2015 Scholar&apos;s Social - West</label>
+            </value>
+            <value>
+                <fullName>YUBA 2015 January Graduation</fullName>
+                <default>false</default>
+                <label>YUBA 2015 January Graduation</label>
+            </value>
+            <value>
+                <fullName>YUBA 2015 July Graduation</fullName>
+                <default>false</default>
+                <label>YUBA 2015 July Graduation</label>
+            </value>
+            <value>
+                <fullName>YUBA 2015 SV Campus Expansion</fullName>
+                <default>false</default>
+                <label>YUBA 2015 SV Campus Expansion</label>
+            </value>
+            <value>
+                <fullName>YUBA 2015 YUBA/SV Gives 2015</fullName>
+                <default>false</default>
+                <label>YUBA 2015 YUBA/SV Gives 2015</label>
+            </value>
+            <value>
+                <fullName>YUBA Talent Forward Campaign</fullName>
+                <default>false</default>
+                <label>YUBA Talent Forward Campaign</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

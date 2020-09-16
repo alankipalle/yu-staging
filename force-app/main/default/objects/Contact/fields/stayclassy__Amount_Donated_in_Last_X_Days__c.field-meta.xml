@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>stayclassy__Amount_Donated_in_Last_X_Days__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total amount donated by this Contact in the last X number of days.  This number can be defined in Classy Custom Settings; by default the number is 180 days.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To change the number of days used to calculate this field, go to Develop &gt; Custom Settings &gt; Classy Settings &gt; Manage &gt; Edit Default</inlineHelpText>
+    <label>Amount Donated in Last X Days</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

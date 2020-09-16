@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>stayclassy__Number_of_Recurring_Donations__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The number of successfully processed donations associated with a recurring donor profile for donations made through Classy.</description>
+    <externalId>false</externalId>
+    <label>Number of Recurring Donations</label>
+    <precision>4</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

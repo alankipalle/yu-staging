@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Mailing_Label_State__c</fullName>
+    <description>State corresponding to the selected Preferred Mailing Address of the contact.</description>
+    <externalId>false</externalId>
+    <formula>CASE( Primary_Address__c, 
+&quot;Work&quot;, MailingState, 
+&quot;Home&quot;, OtherState, 
+&quot;Default Household&quot;,  OtherState,
+&quot;Additional&quot;, OtherState,
+&quot;ERROR: No preferred mailing address selected&quot; 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mailing Label: State</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

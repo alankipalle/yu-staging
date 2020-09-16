@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Zip_Code_first_5_digits__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(Mailing_Label_Postal_Code__c)),
+LEFT(Mailing_Label_Postal_Code__c,5), &quot;&quot;
+)</formula>
+    <label>Zip Code - first 5 digits</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>GiftCapacitySource__c</fullName>
+    <description>Gift Capacity Source details who conducted the capacity screening. This can be out internal research team or an outside vendor.</description>
+    <externalId>false</externalId>
+    <label>Gift Capacity Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DonorSearch</fullName>
+                <default>false</default>
+                <label>DonorSearch</label>
+            </value>
+            <value>
+                <fullName>Year Up Prospect Research</fullName>
+                <default>false</default>
+                <label>Year Up Prospect Research</label>
+            </value>
+            <value>
+                <fullName>WealthEngine</fullName>
+                <default>false</default>
+                <label>WealthEngine</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

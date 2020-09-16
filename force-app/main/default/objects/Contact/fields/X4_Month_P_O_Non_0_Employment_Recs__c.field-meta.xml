@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X4_Month_P_O_Non_0_Employment_Recs__c</fullName>
+    <description>Displays the number of associated Employment records that qualify as a 4 month positive outcome AND have non-$0 starting wages. This is calculated using a DLRS roll up job: https://yearup--dlrs.na32.visual.force.com/apex/managelookuprollupsummaries?id=m06380000008OL8AAM</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Displays the number of associated Employment records that qualify as a 4 month positive outcome AND have non-$0 starting wages. This is calculated using a DLRS roll up job.</inlineHelpText>
+    <label>4 Month P.O. Non-$0 Employment Recs</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

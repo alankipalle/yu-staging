@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>ADP_Associate_ID__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>Use this number to triangulate matching from ADP to Salesforce. The Contact ID is being imported to ADP for the third matching criteria.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>File # in ADP</inlineHelpText>
+    <label>ADP Associate ID</label>
+    <length>25</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

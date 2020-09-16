@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Participant_Funding_Group__c</fullName>
+    <description>Used to tag students as having participated in a funding program</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to tag students as having participated in a funding program</inlineHelpText>
+    <label>Participant Funding Group</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Skillworks</fullName>
+                <default>false</default>
+                <label>Skillworks</label>
+            </value>
+            <value>
+                <fullName>Career Pathways</fullName>
+                <default>false</default>
+                <label>Career Pathways</label>
+            </value>
+            <value>
+                <fullName>ISIS - Treatment</fullName>
+                <default>false</default>
+                <label>ISIS - Treatment</label>
+            </value>
+            <value>
+                <fullName>ISIS - Control</fullName>
+                <default>false</default>
+                <label>ISIS - Control</label>
+            </value>
+            <value>
+                <fullName>D-10</fullName>
+                <default>false</default>
+                <label>D-10</label>
+            </value>
+            <value>
+                <fullName>Military Service</fullName>
+                <default>false</default>
+                <label>Military Service</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

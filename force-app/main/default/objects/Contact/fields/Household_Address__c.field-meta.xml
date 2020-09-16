@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Household_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/servlet/servlet.Integration?lid=01N500000000UFT&amp;eid=&quot;&amp;Id&amp;&quot;&amp;direction=toHousehold&quot;, IMAGE( &quot;servlet/servlet.FileDownload?file=01550000000Jh7K&quot;, &quot;image from Documents tab&quot;))  &amp;  HYPERLINK(&quot;/servlet/servlet.Integration?lid=01N500000000UFT&amp;eid=&quot;&amp;Id&amp;&quot;&amp;direction=toContact&quot;, IMAGE( &quot;servlet/servlet.FileDownload?file=01550000000Jh6y&quot;, &quot;image from Documents tab&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Household Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

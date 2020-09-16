@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Primary_Address__c</fullName>
+    <description>To which address should mailings go?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>To which address should mailings go?</inlineHelpText>
+    <label>Preferred Mailing Address</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Work</fullName>
+                <default>false</default>
+                <label>Work</label>
+            </value>
+            <value>
+                <fullName>Home</fullName>
+                <default>false</default>
+                <label>Home</label>
+            </value>
+            <value>
+                <fullName>Additional</fullName>
+                <default>false</default>
+                <label>Additional</label>
+            </value>
+            <value>
+                <fullName>Default Household</fullName>
+                <default>false</default>
+                <label>Default Household</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

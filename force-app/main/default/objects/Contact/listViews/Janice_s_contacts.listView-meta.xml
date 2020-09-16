@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Janice_s_contacts</fullName>
+    <booleanFilter>(1 OR 3) AND 2</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.ADDRESS2_STREET</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>contains</operation>
+        <value>Bank of America</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Janice</value>
+    </filters>
+    <filters>
+        <field>npsp__Primary_Affiliation__c</field>
+        <operation>contains</operation>
+        <value>Bank of America</value>
+    </filters>
+    <label>CE: Janice&apos;s BOA contacts</label>
+</ListView>

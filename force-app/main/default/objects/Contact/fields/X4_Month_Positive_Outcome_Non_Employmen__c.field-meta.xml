@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X4_Month_Positive_Outcome_Non_Employmen__c</fullName>
+    <description>Displays a 1 if the contact is a positive outcomes based solely on education or training records. Used in positive outcomes calculations.</description>
+    <externalId>false</externalId>
+    <formula>IF(AND(OR( X4_Month_Positive_Outcome_Education_Recs__c &gt;0,  X4_Mont_Positive_Outcome_Training_Recs__c &gt;0), X4_Month_Positive_Outcome_Employment_Rec__c &lt;1),1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Displays a 1 if the contact is a positive outcomes based solely on education or training records. Used in positive outcomes calculations.</inlineHelpText>
+    <label>4 Month Positive Outcome Non Employment?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

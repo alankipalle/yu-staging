@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Students_with_bad_data</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>Most_Recent_Engagement__c</columns>
+    <columns>Cohort__c</columns>
+    <columns>Most_Recent_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Most_Recent_Engagement__c</field>
+        <operation>contains</operation>
+        <value>January 2021</value>
+    </filters>
+    <filters>
+        <field>Cohort__c</field>
+        <operation>notEqual</operation>
+        <value>January 2021</value>
+    </filters>
+    <label>Students with bad  data</label>
+</ListView>

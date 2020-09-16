@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Training_Summary__c</fullName>
+    <description>FT or PT status of any YU-related training programs in which the alum is currently enrolled, added back in by LG 6.23.15 per the business request.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>FT or PT status of any YU-related training programs in which the alum is currently enrolled</inlineHelpText>
+    <label>Training Summary</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

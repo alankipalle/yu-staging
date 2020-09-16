@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Birth_Year__c</fullName>
+    <description>What is the birth year of the donor? For more details see cases CA-08756 and CA-08946.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What is the birth year of the donor?</inlineHelpText>
+    <label>Birth Year</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Contact_Role__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Select as many roles that this contact may perform.</inlineHelpText>
+    <label>Contact Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advisor</fullName>
+                <default>false</default>
+                <label>Advisor</label>
+            </value>
+            <value>
+                <fullName>Alumni</fullName>
+                <default>false</default>
+                <label>Alumni</label>
+            </value>
+            <value>
+                <fullName>Assigned Board Member</fullName>
+                <default>false</default>
+                <label>Assigned Board Member</label>
+            </value>
+            <value>
+                <fullName>Billing Contact</fullName>
+                <default>false</default>
+                <label>Billing Contact</label>
+            </value>
+            <value>
+                <fullName>CE Connection</fullName>
+                <default>false</default>
+                <label>CE Connection</label>
+            </value>
+            <value>
+                <fullName>Coach Influencer</fullName>
+                <default>false</default>
+                <label>Coach Influencer</label>
+            </value>
+            <value>
+                <fullName>Committee Chair</fullName>
+                <default>false</default>
+                <label>Committee Chair</label>
+            </value>
+            <value>
+                <fullName>Committee Member</fullName>
+                <default>false</default>
+                <label>Committee Member</label>
+            </value>
+            <value>
+                <fullName>Contract Facilitator</fullName>
+                <default>false</default>
+                <label>Contract Facilitator</label>
+            </value>
+            <value>
+                <fullName>Executive Sponsor</fullName>
+                <default>false</default>
+                <label>Executive Sponsor</label>
+            </value>
+            <value>
+                <fullName>Financial Decision Maker</fullName>
+                <default>false</default>
+                <label>Financial Decision Maker</label>
+            </value>
+            <value>
+                <fullName>Founders Circle</fullName>
+                <default>false</default>
+                <label>Founders Circle</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Employer</fullName>
+                <default>false</default>
+                <label>Grads of Life - Employer</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Funder</fullName>
+                <default>false</default>
+                <label>Grads of Life - Funder</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - General</fullName>
+                <default>false</default>
+                <label>Grads of Life - General</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Government</fullName>
+                <default>false</default>
+                <label>Grads of Life - Government</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Partner</fullName>
+                <default>false</default>
+                <label>Grads of Life - Partner</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Partner Directory</fullName>
+                <default>false</default>
+                <label>Grads of Life - Partner Directory</label>
+            </value>
+            <value>
+                <fullName>Grads of Life - Success Story</fullName>
+                <default>false</default>
+                <label>Grads of Life - Success Story</label>
+            </value>
+            <value>
+                <fullName>Grant Officer</fullName>
+                <default>false</default>
+                <label>Grant Officer</label>
+            </value>
+            <value>
+                <fullName>Individual Donor</fullName>
+                <default>false</default>
+                <label>Individual Donor</label>
+            </value>
+            <value>
+                <fullName>Local Board Member</fullName>
+                <default>false</default>
+                <label>Local Board Member</label>
+            </value>
+            <value>
+                <fullName>Major Donor</fullName>
+                <default>false</default>
+                <label>Major Donor</label>
+            </value>
+            <value>
+                <fullName>Matching Gift</fullName>
+                <default>false</default>
+                <label>Matching Gift</label>
+            </value>
+            <value>
+                <fullName>National Board Member</fullName>
+                <default>false</default>
+                <label>National Board Member</label>
+            </value>
+            <value>
+                <fullName>Officer</fullName>
+                <default>false</default>
+                <label>Officer</label>
+            </value>
+            <value>
+                <fullName>Organizational Influencer</fullName>
+                <default>false</default>
+                <label>Organizational Influencer</label>
+            </value>
+            <value>
+                <fullName>Planned Giving Donor</fullName>
+                <default>false</default>
+                <label>Planned Giving Donor</label>
+            </value>
+            <value>
+                <fullName>Site Representative</fullName>
+                <default>false</default>
+                <label>Site Representative</label>
+            </value>
+            <value>
+                <fullName>Soft Credit</fullName>
+                <default>false</default>
+                <label>Soft Credit</label>
+            </value>
+            <value>
+                <fullName>Solicitor</fullName>
+                <default>false</default>
+                <label>Solicitor</label>
+            </value>
+            <value>
+                <fullName>Supervisor</fullName>
+                <default>false</default>
+                <label>Supervisor</label>
+            </value>
+            <value>
+                <fullName>User Influencer</fullName>
+                <default>false</default>
+                <label>User Influencer</label>
+            </value>
+            <value>
+                <fullName>VIP/Influencer</fullName>
+                <default>false</default>
+                <label>VIP/Influencer</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+            <value>
+                <fullName>Year Up Employee</fullName>
+                <default>false</default>
+                <label>Year Up Employee</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

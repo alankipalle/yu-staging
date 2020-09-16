@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>stayclassy__sc_total_fundraising__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Total amount of donations received through the Contact&apos;s Classy fundraising pages.</description>
+    <externalId>false</externalId>
+    <label>Total Fundraised</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

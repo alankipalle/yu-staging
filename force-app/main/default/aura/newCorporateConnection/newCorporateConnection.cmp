@@ -1,6 +1,0 @@
-<aura:component  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:isUrlAddressable" access="global" >
- 
-    <input type="button" value="Save" id="btnTest" onclick="{!c.showRecords}" style="visibility: hidden; height: 1px; width: 1px;"/>
-    <input type="hidden" id="AccountId" />
-    <input type="hidden" id="ContactId" />
-</aura:component>

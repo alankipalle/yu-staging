@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Bad_Email__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag to signify whether the email address (Email) is undeliverable.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If checked, the email address was undeliverable.</inlineHelpText>
+    <label>Bad Email Address</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
