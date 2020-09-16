@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Preferred_Name_Validation_Rule</fullName>
+    <active>true</active>
+    <description>If Legal Name is filled in Approval for Preferred Name must be name must be checked and vice versa.</description>
+    <errorConditionFormula>(Name_is_Preferred_Not_Legal__c = FALSE &amp;&amp;
+(!ISBLANK(Legal_First_Name__c) ||
+!ISBLANK(Legal_Last_Name__c)
+))
+||
+(Name_is_Preferred_Not_Legal__c = TRUE &amp;&amp;
+ISCHANGED(Name_is_Preferred_Not_Legal__c ) &amp;&amp;
+Most_Recent_Status__c =&quot;Enrolled&quot;)
+&amp;&amp; $User.Profile_Name__c != &quot;System Administrator&quot;</errorConditionFormula>
+    <errorMessage>If you are filling in the Legal Name fields, please make sure you have approval and check off the Approval for Preferred Name checkbox. If the student in question&apos;s engagement is in the Enrolled status, please reach out to IT Help to make the updates.</errorMessage>
+</ValidationRule>

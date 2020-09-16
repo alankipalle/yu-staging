@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>DFW_Admissions</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CONTACT.PHONE3</columns>
+    <columns>Most_Recent_Pipeline_Stage__c</columns>
+    <columns>Most_Recent_Status__c</columns>
+    <columns>Information_Session_Date_and_Time__c</columns>
+    <columns>Information_Session_Attended__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <columns>Site__c</columns>
+    <columns>CONTACT.ADDRESS1_STREET</columns>
+    <columns>CONTACT.ADDRESS1_CITY</columns>
+    <columns>CONTACT.ADDRESS1_STATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>DFW Individuals</value>
+    </filters>
+    <label>DFW Admissions</label>
+    <sharedTo>
+        <role>DFW</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2014_Opportunity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used for development forecasting for 2013</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check to indicate an ask will be made of this donor in 2012</inlineHelpText>
+    <label>2014 Opportunity</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

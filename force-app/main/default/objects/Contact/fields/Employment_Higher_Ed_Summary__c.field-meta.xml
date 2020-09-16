@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Employment_Higher_Ed_Summary__c</fullName>
+    <description>Summary of student&apos;s current or last-known employment and/or college status.
+Added by in by LG 6.23.15 for the business.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Summary of student&apos;s current or last-known employment and/or college status.</inlineHelpText>
+    <label>Employment/Higher Ed Summary</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Currently working FT and in school FT</fullName>
+                <default>false</default>
+                <label>Currently working FT and in school FT</label>
+            </value>
+            <value>
+                <fullName>Currently working FT and in school PT</fullName>
+                <default>false</default>
+                <label>Currently working FT and in school PT</label>
+            </value>
+            <value>
+                <fullName>Currently working PT and in school FT</fullName>
+                <default>false</default>
+                <label>Currently working PT and in school FT</label>
+            </value>
+            <value>
+                <fullName>Currently working PT and in school PT</fullName>
+                <default>false</default>
+                <label>Currently working PT and in school PT</label>
+            </value>
+            <value>
+                <fullName>Currently working FT and not in school</fullName>
+                <default>false</default>
+                <label>Currently working FT and not in school</label>
+            </value>
+            <value>
+                <fullName>Currently working PT and not in school</fullName>
+                <default>false</default>
+                <label>Currently working PT and not in school</label>
+            </value>
+            <value>
+                <fullName>Currently out of work and in school FT</fullName>
+                <default>false</default>
+                <label>Currently out of work and in school FT</label>
+            </value>
+            <value>
+                <fullName>Currently out of work and in school PT</fullName>
+                <default>false</default>
+                <label>Currently out of work and in school PT</label>
+            </value>
+            <value>
+                <fullName>Currently out of work and not in school</fullName>
+                <default>false</default>
+                <label>Currently out of work and not in school</label>
+            </value>
+            <value>
+                <fullName>No current employment/school information</fullName>
+                <default>false</default>
+                <label>No current employment/school information</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

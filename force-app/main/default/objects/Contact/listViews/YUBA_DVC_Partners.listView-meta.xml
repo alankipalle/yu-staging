@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>YUBA_DVC_Partners</fullName>
+    <booleanFilter>1 AND 2</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CONTACT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>Workday,GE Digital,Wine shipping,Grocery outlet,Chevron,Shaklee,Kaiser,john muir</value>
+    </filters>
+    <filters>
+        <field>CONTACT.EMAIL</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>YUBA DVC Founding Partners</label>
+</ListView>

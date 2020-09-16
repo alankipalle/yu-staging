@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Grad_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Cohort__c ,
+&quot;January 2005&quot;, DATE(2005,01,29),
+&quot;January 2006&quot;, DATE(2006,01,28),
+&quot;January 2007&quot;, DATE(2007,01,27),
+&quot;January 2008&quot;, DATE(2008,01,26),
+&quot;January 2009&quot;, DATE(2009,01,31),
+&quot;January 2010&quot;, DATE(2010,01,30),
+&quot;January 2011&quot;, DATE(2011,01,29),
+&quot;January 2012&quot;, DATE(2012,01,28),
+&quot;January 2013&quot;, DATE(2013,01,26),
+&quot;January 2014&quot;, DATE(2014,01,25),
+&quot;January 2015&quot;, DATE(2015,01,24),
+&quot;January 2016&quot;, DATE(2016,01,23),
+&quot;January 2017&quot;, DATE(2017,01,28),
+&quot;July 2004&quot;, DATE(2004,07,08),
+&quot;July 2005&quot;, DATE(2005,07,30),
+&quot;July 2006&quot;, DATE(2006,07,29),
+&quot;July 2007&quot;, DATE(2007,07,28),
+&quot;July 2008&quot;, DATE(2008,07,26),
+&quot;July 2009&quot;, DATE(2009,07,25),
+&quot;July 2010&quot;, DATE(2010,07,31),
+&quot;July 2011&quot;, DATE(2011,07,30),
+&quot;July 2012&quot;, DATE(2012,07,28),
+&quot;July 2013&quot;, DATE(2013,07,27),
+&quot;July 2014&quot;, DATE(2014,07,31),
+&quot;July 2015&quot;, DATE(2015,07,25),
+&quot;July 2016&quot;, DATE(2016,07,30),
+&quot;July 2017&quot;, DATE(2017,07,29),
+DATE(1900,1,1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Grad Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

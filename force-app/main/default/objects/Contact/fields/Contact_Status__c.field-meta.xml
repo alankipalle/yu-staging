@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Contact_Status__c</fullName>
+    <description>Indicates overall state of Year Up&apos;s connection with an individual - not what we do with the person (eg, solicit donations vs engage in our program), just how &quot;live&quot; a connection we have.
+
+- Business &amp; general contacts, with record type &quot;Individual,&quot; use values: {Nurture-Suspect, Active, Inactive, Do Not Contact, Duplicate, No Longer At Company, Deceased, Active Prospect/Donor}
+
+- Donor management, two impt values are Nurture-Suspect &amp; Active. We mark a new contact as Nurture-Suspect at the beginning of a relationship. An Active donor has contributed. There are no validation rules or restrictions on assignment of values. (QUESTION: does “Active Prospect/Donor” have meaning?)
+
+- Prospective &amp; current students, use values: {Active, Do Not Contact, Duplicate, No Longer At Company, Deceased}. These categories overlap w/status on student&apos;s current Engagement. At present, use Engagement Status for reporting.
+
+(CE doesn’t use Contact Status, last cked Spr ‘16)
+
+ - SB 1/4/17</description>
+    <externalId>false</externalId>
+    <label>Contact Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Active</fullName>
+                <default>true</default>
+                <label>Active</label>
+            </value>
+            <value>
+                <fullName>Active Prospect/Donor</fullName>
+                <default>false</default>
+                <label>Active Prospect/Donor</label>
+            </value>
+            <value>
+                <fullName>Deceased</fullName>
+                <default>false</default>
+                <label>Deceased</label>
+            </value>
+            <value>
+                <fullName>Disqualified from Major Giving</fullName>
+                <default>false</default>
+                <label>Disqualified from Major Giving</label>
+            </value>
+            <value>
+                <fullName>Do Not Contact</fullName>
+                <default>false</default>
+                <label>Do Not Contact</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>No Longer At Company</fullName>
+                <default>false</default>
+                <label>No Longer At Company</label>
+            </value>
+            <value>
+                <fullName>Nurture-Suspect</fullName>
+                <default>false</default>
+                <label>Nurture-Suspect</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

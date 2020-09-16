@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Grads_of_Life_Function__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>When you select contact role you can select what the contact is responsible for.</inlineHelpText>
+    <label>Grads of Life Function</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Best Practice Provider</fullName>
+                <default>false</default>
+                <label>Best Practice Provider</label>
+            </value>
+            <value>
+                <fullName>Convening</fullName>
+                <default>false</default>
+                <label>Convening</label>
+            </value>
+            <value>
+                <fullName>EMP Commitment</fullName>
+                <default>false</default>
+                <label>EMP Commitment</label>
+            </value>
+            <value>
+                <fullName>EMP Inquires</fullName>
+                <default>false</default>
+                <label>EMP Inquires</label>
+            </value>
+            <value>
+                <fullName>EMP Technical Assistance</fullName>
+                <default>false</default>
+                <label>EMP Technical Assistance</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Partner Directory</fullName>
+                <default>false</default>
+                <label>Partner Directory</label>
+            </value>
+            <value>
+                <fullName>ROI/Business Case</fullName>
+                <default>false</default>
+                <label>ROI/Business Case</label>
+            </value>
+            <value>
+                <fullName>Spokesperson</fullName>
+                <default>false</default>
+                <label>Spokesperson</label>
+            </value>
+            <value>
+                <fullName>Success Stories</fullName>
+                <default>false</default>
+                <label>Success Stories</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

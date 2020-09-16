@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>No_Children__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Does the donor have no children? For more details see cases CA-08756 and CA-08946.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if the donor has no children.</inlineHelpText>
+    <label>No Children?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

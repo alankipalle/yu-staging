@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Home_Score_3</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.ADDRESS1_STREET</columns>
+    <columns>CONTACT.ADDRESS1_CITY</columns>
+    <columns>CONTACT.ADDRESS1_STATE</columns>
+    <columns>CONTACT.ADDRESS1_ZIP</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Prospect</value>
+    </filters>
+    <filters>
+        <field>ID_Contact_18_digit__c</field>
+        <operation>equals</operation>
+        <value>0033800002yAsh2</value>
+    </filters>
+    <label>Home  Score = 3</label>
+</ListView>

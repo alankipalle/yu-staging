@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>MSA__c</fullName>
+    <externalId>false</externalId>
+    <label>MSA</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New York, Newark, Jersey City</fullName>
+                <default>false</default>
+                <label>New York, Newark, Jersey City</label>
+            </value>
+            <value>
+                <fullName>Atlanta, Roswell, Sandy Springs</fullName>
+                <default>false</default>
+                <label>Atlanta, Roswell, Sandy Springs</label>
+            </value>
+            <value>
+                <fullName>Miami, Ft Lauderdale, West Palm Beach</fullName>
+                <default>false</default>
+                <label>Miami, Ft Lauderdale, West Palm Beach</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

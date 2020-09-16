@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Program_Time_Commitment_OIS__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Question answered on Online Info session</description>
+    <externalId>false</externalId>
+    <label>Program Time Commitment (OIS)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

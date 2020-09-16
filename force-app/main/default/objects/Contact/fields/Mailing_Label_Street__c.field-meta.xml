@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Mailing_Label_Street__c</fullName>
+    <description>Second line of mailing label: street address for the selected Preferred Mailing Address.</description>
+    <externalId>false</externalId>
+    <formula>CASE( Primary_Address__c,
+   &quot;Work&quot;,  MailingStreet, 
+   &quot;Home&quot;,  OtherStreet,
+   &quot;ERROR: No preferred mailing address selected&quot;
+  )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Mailing Label: Street</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

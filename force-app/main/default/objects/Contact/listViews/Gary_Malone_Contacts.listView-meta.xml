@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Gary_Malone_Contacts</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>Priority_Rating__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Development_Owner__c</columns>
+    <columns>Secondary_Devo_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Development_Owner__c</field>
+        <operation>equals</operation>
+        <value>Gary Malone</value>
+    </filters>
+    <filters>
+        <field>CONTACT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Contact.Donor</value>
+    </filters>
+    <label>GMs Development Contacts</label>
+    <sharedTo>
+        <group>DevelopmentUsers</group>
+    </sharedTo>
+</ListView>

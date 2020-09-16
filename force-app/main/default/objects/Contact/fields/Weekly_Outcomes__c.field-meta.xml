@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Weekly_Outcomes__c</fullName>
+    <description>Field is populated by the &quot;AlumniUtilities&quot; Apex Class.
+
+It was created to make it easier to report on alumni positive outcomes numbers at set intervals after graduation. e.g., what % of alumni were a positive outcome 2 weeks after graduation? What about 10 weeks after? The syntax is: 
+
+Weeknum:PosOutcome:Employed:FT School; 
+
+where Weeknum is the # of weeks after graduation, and the next 3 fields are each a 1 or a 0 based on whether the grad was a positive outcome, was employed, or was in FT school or training that week.</description>
+    <externalId>false</externalId>
+    <label>Weekly Outcomes</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

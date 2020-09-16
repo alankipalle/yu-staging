@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Internship_Connector__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Used to track which contact introduced YU to this contact</inlineHelpText>
+    <label>Internship Connector</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Participant, Participant Donor, Prospective Student</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Contacts (Internship Connector)</relationshipLabel>
+    <relationshipName>Contacts1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

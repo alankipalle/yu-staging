@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Create_a_Call_Report</fullName>
+    <availability>online</availability>
+    <description>Used to log a development call report</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Create a Call Report</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/00T/e?tsk5=Call Report&amp;who_id={!Contact.Id}&amp;retURL=/{!Contact.Id}&amp;cancelURL=/{!Contact.Id}&amp;RecordType=01250000000UIZP&amp;tsk4={!TODAY()}&amp;ent=Task</url>
+</WebLink>

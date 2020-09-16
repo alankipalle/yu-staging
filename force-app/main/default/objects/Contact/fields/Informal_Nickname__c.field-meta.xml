@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Informal_Nickname__c</fullName>
+    <description>Informal name of contact that they may go by; e.g. - Bill, Bob, Dick</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Informal name of contact that they may go by; e.g. - Bill, Bob, Dick</inlineHelpText>
+    <label>Informal/Nickname</label>
+    <length>40</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

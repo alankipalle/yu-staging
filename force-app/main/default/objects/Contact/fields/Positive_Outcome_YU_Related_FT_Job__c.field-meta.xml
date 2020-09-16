@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Positive_Outcome_YU_Related_FT_Job__c</fullName>
+    <description>Determines if a student currently counts as a positive outcome and is employed full-time in a job related to Year Up curriculum. Returns a 1 if criteria is met and a 0 if otherwise.</description>
+    <externalId>false</externalId>
+    <formula>IF(YU_Related_FT_Emp_Recs_Count__c &gt; 0,1,0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Determines if a student currently counts as a positive outcome and is employed full-time in a job related to Year Up curriculum. Returns a 1 if criteria is met and a 0 if otherwise.</inlineHelpText>
+    <label>Positive Outcome YU-Related FT Job?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>YUAZ_App_Sent</fullName>
+    <booleanFilter>1 AND (2 or 3) and 4 and 5</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>mkto_si__Priority__c</columns>
+    <columns>Most_Recent_Engagement__c</columns>
+    <columns>MRE_Pipeline_stage__c</columns>
+    <columns>Most_Recent_Status__c</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>npe01__HomeEmail__c</columns>
+    <columns>npe01__WorkEmail__c</columns>
+    <columns>npe01__Preferred_Email__c</columns>
+    <columns>Online_Campaign__c</columns>
+    <columns>Most_Recent_Pipeline_Stage__c</columns>
+    <columns>Contact_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MRE_SITE__c</field>
+        <operation>equals</operation>
+        <value>PHX</value>
+    </filters>
+    <filters>
+        <field>MRE_Pipeline_stage__c</field>
+        <operation>equals</operation>
+        <value>d. Application sent</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Pipeline_Stage__c</field>
+        <operation>equals</operation>
+        <value>d. Application sent</value>
+    </filters>
+    <filters>
+        <field>Most_Recent_Status__c</field>
+        <operation>equals</operation>
+        <value>Prospect</value>
+    </filters>
+    <filters>
+        <field>Current_Admissions_Cohort__c</field>
+        <operation>equals</operation>
+        <value>yes</value>
+    </filters>
+    <label>YUAZ App Sent</label>
+    <sharedTo>
+        <role>PHX</role>
+    </sharedTo>
+</ListView>

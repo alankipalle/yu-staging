@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Current_ABILA_Billing_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this box for the Workflow rule for updating the billing contact ID with the Unique 4 digit ID starting with 6. 
+This field will be deleted after the workflow rule is ran and the trigger is in place.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ABILA Billing Contact Activation box.</inlineHelpText>
+    <label>Current ABILA Billing Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

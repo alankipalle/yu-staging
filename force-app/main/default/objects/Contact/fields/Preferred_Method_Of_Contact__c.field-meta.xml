@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Preferred_Method_Of_Contact__c</fullName>
+    <externalId>false</externalId>
+    <label>Preferred Method Of Contact</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Home Phone</fullName>
+                <default>false</default>
+                <label>Home Phone</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Mail</fullName>
+                <default>false</default>
+                <label>Mail</label>
+            </value>
+            <value>
+                <fullName>Mobile Phone</fullName>
+                <default>false</default>
+                <label>Mobile Phone</label>
+            </value>
+            <value>
+                <fullName>Text</fullName>
+                <default>false</default>
+                <label>Text</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

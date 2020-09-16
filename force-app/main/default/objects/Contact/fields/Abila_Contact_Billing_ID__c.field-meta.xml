@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Abila_Contact_Billing_ID__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>4 digit unique ID for billing contact iD for Abila starting with 6000, will be unique for each billing contact that has a different billing address</inlineHelpText>
+    <label>Abila Contact Billing ID</label>
+    <length>10</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

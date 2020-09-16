@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>X2015_Stage_Probability__c</fullName>
+    <externalId>false</externalId>
+    <label>2015 Stage/Probability</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cultivate: Educate 10%</fullName>
+                <default>false</default>
+                <label>Cultivate: Educate 10%</label>
+            </value>
+            <value>
+                <fullName>Cultivate: Engage 30%</fullName>
+                <default>false</default>
+                <label>Cultivate: Engage 30%</label>
+            </value>
+            <value>
+                <fullName>Solicit: Ask 60%</fullName>
+                <default>false</default>
+                <label>Solicit: Ask 60%</label>
+            </value>
+            <value>
+                <fullName>Solicit: Verbal Commitment 90%</fullName>
+                <default>false</default>
+                <label>Solicit: Verbal Commitment 90%</label>
+            </value>
+            <value>
+                <fullName>Solicit: On Hold 1%</fullName>
+                <default>false</default>
+                <label>Solicit: On Hold 1%</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

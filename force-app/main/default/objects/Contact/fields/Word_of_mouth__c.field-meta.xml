@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Word_of_mouth__c</fullName>
+    <externalId>false</externalId>
+    <label>Track Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>PM</fullName>
+                <default>false</default>
+                <label>PM</label>
+            </value>
+            <value>
+                <fullName>QA</fullName>
+                <default>false</default>
+                <label>QA</label>
+            </value>
+            <value>
+                <fullName>SM</fullName>
+                <default>false</default>
+                <label>SM</label>
+            </value>
+            <value>
+                <fullName>Anti-Money Laundering</fullName>
+                <default>false</default>
+                <label>Anti-Money Laundering</label>
+            </value>
+            <value>
+                <fullName>Digital Advertising</fullName>
+                <default>false</default>
+                <label>Digital Advertising</label>
+            </value>
+            <value>
+                <fullName>Technology</fullName>
+                <default>false</default>
+                <label>Technology</label>
+            </value>
+            <value>
+                <fullName>Business</fullName>
+                <default>false</default>
+                <label>Business</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Customer Service</fullName>
+                <default>false</default>
+                <label>Customer Service</label>
+            </value>
+            <value>
+                <fullName>Information Technology</fullName>
+                <default>false</default>
+                <label>Information Technology</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

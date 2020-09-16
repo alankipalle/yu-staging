@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Email</fullName>
+    <inlineHelpText>Standard Email field for Campaigns is &quot;read only&quot;. Update either Personal, Work or Student Year Up Email. When you then set &quot;Preferred Email,&quot; this standard email field will update automatically.</inlineHelpText>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+</CustomField>

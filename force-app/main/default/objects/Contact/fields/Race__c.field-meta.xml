@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Race__c</fullName>
+    <externalId>false</externalId>
+    <label>Race</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Asian</fullName>
+                <color>#0B6FCE</color>
+                <default>false</default>
+                <label>Asian</label>
+            </value>
+            <value>
+                <fullName>White</fullName>
+                <color>#78C953</color>
+                <default>false</default>
+                <label>White</label>
+            </value>
+            <value>
+                <fullName>Native American</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Native American</label>
+            </value>
+            <value>
+                <fullName>Hispanic or Latino</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>Hispanic or Latino</label>
+            </value>
+            <value>
+                <fullName>Black or African American</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>Black or African American</label>
+            </value>
+            <value>
+                <fullName>Other/Unknown</fullName>
+                <color>#A53711</color>
+                <default>false</default>
+                <label>Other/Unknown</label>
+            </value>
+            <value>
+                <fullName>Native Hawaiian or Other Pacific Islander</fullName>
+                <color>#66E9BD</color>
+                <default>false</default>
+                <label>Native Hawaiian or Other Pacific Islander</label>
+            </value>
+            <value>
+                <fullName>Two or More Races</fullName>
+                <color>#0B24BE</color>
+                <default>false</default>
+                <label>Two or More Races</label>
+            </value>
+            <value>
+                <fullName>I prefer not to say</fullName>
+                <default>false</default>
+                <label>I prefer not to say</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

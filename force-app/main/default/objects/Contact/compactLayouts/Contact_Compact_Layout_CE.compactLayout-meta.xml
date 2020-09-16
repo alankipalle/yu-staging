@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <fullName>Contact_Compact_Layout_CE</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>EmployerAccount__c</fields>
+    <fields>Phone</fields>
+    <fields>npe01__WorkEmail__c</fields>
+    <fields>Title</fields>
+    <label>Contact Compact Layout - CE</label>
+</CompactLayout>
