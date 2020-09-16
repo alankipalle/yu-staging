@@ -1,0 +1,100 @@
+<template>
+  <template if:true={seatSection}>
+    <lightning-card
+      title="Available Seats"
+      icon-name="standard:service_resource"
+    >
+      <lightning-button
+        slot="actions"
+        label={label}
+        onclick={handleHide}
+      ></lightning-button>
+      <template if:true={section}>
+        <template if:true={dataAvialble}>
+          <div
+            class="slds-p-around_none slds-var-m-top_x-small slds-var-m-bottom_medium slds-m-horizontal_none"
+          >
+            <lightning-layout>
+              <lightning-layout-item size="3" padding="around-small">
+                <div class="custom-box slds-text-align_left">
+                  <lightning-combobox
+                    name="employer"
+                    label="Employer"
+                    value={employerName}
+                    placeholder="Select Employer"
+                    options={Employeroptions}
+                    onchange={handleChange}
+                  >
+                  </lightning-combobox>
+                </div>
+              </lightning-layout-item>
+              <lightning-layout-item size="3" padding="around-small">
+                <div class="custom-box slds-text-align_left">
+                  <lightning-combobox
+                    name="track"
+                    label="Track"
+                    value={trackName}
+                    placeholder="Select Track"
+                    options={trackOptions}
+                    onchange={handleChange}
+                  >
+                  </lightning-combobox>
+                </div>
+              </lightning-layout-item>
+              <lightning-layout-item size="3" padding="around-small">
+                <div class="custom-box slds-text-align_left">
+                  <lightning-combobox
+                    name="specialty"
+                    label="Specialty"
+                    value={specilatyName}
+                    placeholder="Select Specialty"
+                    options={specialtyOptions}
+                    onchange={handleChange}
+                  >
+                  </lightning-combobox>
+                </div>
+              </lightning-layout-item>
+              <lightning-layout-item size="3" padding="around-small">
+                <div class="custom-box slds-text-align_left">
+                  <div onkeyup={handleKeyUp}>
+                    <lightning-input
+                      name="enter-search"
+                      label="Search"
+                      type="search"
+                    ></lightning-input>
+                  </div>
+                </div>
+              </lightning-layout-item>
+            </lightning-layout>
+          </div>
+          <lightning-layout multiple-rows="true">
+            <lightning-layout-item size="12">
+              <div style="height: 300px;">
+                <lightning-datatable
+                  key-field="id"
+                  data={data}
+                  columns={columns}
+                  onrowaction={handleRowAction}
+                  default-sort-direction={defaultSortDirection}
+                  sorted-direction={sortDirection}
+                  sorted-by={sortedBy}
+                  onsort={doSorting}
+                  max-row-selection="1"
+                  onrowselection={getSelectedRow}
+                >
+                </lightning-datatable>
+              </div>
+            </lightning-layout-item>
+          </lightning-layout>
+
+          <!--<c-datatable-lwc-fsc record-data={data} column-fields='Id,Name'></c-datatable-lwc-fsc>-->
+        </template>
+        <template if:false={dataAvialble}>
+          <div class="slds-text-align_center slds-text-heading_medium">
+            No Match Records Found!
+          </div>
+        </template>
+      </template>
+    </lightning-card></template
+  ></template
+>

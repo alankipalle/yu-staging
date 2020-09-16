@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride" 
+                access="global">    
+    
+    <aura:attribute name="recordId" type="String"/> 
+    <aura:attribute name="InternshipWorkSite" type="Object"/>   
+    <aura:attribute name="parentIWS" type="Object"/>
+    <aura:attribute name="iwsLoadError" type="String"/>
+    <force:recordData aura:id="iwsRecordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Id,Name,Cohort__c,Stage__c,TrackFamily__c,InternshipStartDate__c,Specialty__c,Account__c,Account__r.Name,Site_Located__r.Name,Opportunity__r.Cohort_Sem__c,Site_Located__c,Opportunity__r.Name,Opportunity__c"
+                      targetRecord="{!v.InternshipWorkSite}"
+                      targetFields="{!v.parentIWS}"
+                      targetError="{!v.iwsLoadError}"
+                      />
+    <div class="slds-float--right heading">
+        <lightning:button label="New Internship" onclick="{!c.createINTRecord}" />
+    </div>
+</aura:component>

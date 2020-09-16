@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="addressAutoComplete">
+    <apiVersion>49.0</apiVersion>
+    <isExposed>true</isExposed>
+    <!-- With following targets make component available for lightning app page, record page and home page in salesforce --><targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <!-- Configuring the design attributes --><targetConfigs>
+        <targetConfig targets="lightning__HomePage,lightning__RecordPage">
+            <property name="objName" type="String" label="Object API" required="true"/>
+            <property name="singleField" type="Boolean" description="Select TRUE, incase address to be populated in one field" default="false" label="Address in one field?" required="true"/>
+            <property name="compundField" type="String" label="compundField"/>
+            <property name="cityField" type="String" default="" label="City"/>
+            <property name="streetField" type="String" default="" label="Street"/>
+            <property name="stateField" type="String" label="State"/>
+            <property name="postalCodeField" type="String" label="PostalCode"/>
+            <property name="countryField" type="String" label="Country"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

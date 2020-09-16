@@ -1,0 +1,37 @@
+<aura:component controller ="classicURLController" implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName" access="global">
+     <!-- 
+     /**
+     * Yearup.
+     *
+     * @category UtilityBar
+     * @author Ajay Kumar Lankipalle  
+     * @description This component is used for generating the classic URL in Lightning pages.
+     */
+ 	-->
+
+    <aura:attribute name="recordId" type="String"/> 
+    <aura:attribute name="baseURL" type="String" />
+    <aura:attribute name="reqdField" type="String" access="global" />    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    <!-- Display Lightning Data Service errors -->
+    <aura:if isTrue="{!not(empty(v.baseURL))}">
+        <!-- Display the new contact form -->
+        <div class="Classic URL">
+            <lightning:card iconName="standard:marketing_actions" title="Classic URL">
+                <div class="slds-p-horizontal--small">                   
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="textarea-id-01">URL:</label>
+                        <div class="slds-form-element__control">
+                             <textarea readonly="true" aura:id="urlClassic" class="slds-textarea">{!v.baseURL}/{!v.recordId}</textarea>                          
+                        </div>
+                    </div>
+                    
+                    <lightning:button class="slds-align_right slds-button slds-button_neutral" iconName="utility:copy_to_clipboard" variant="border-filled" label="Copy" onclick="{! c.copyClassic }"/>
+                </div>
+            </lightning:card>
+        </div>
+    </aura:if>
+    
+</aura:component>

@@ -1,0 +1,51 @@
+<template>
+  <!--<lightning-layout vertical-align="start">
+    <lightning-layout-item size="2" flexibility="auto">
+      <template if:true={filterShowHide}>
+        <c-internsip-match-filter></c-internsip-match-filter>
+      </template>
+    </lightning-layout-item>
+    <lightning-layout-item size="6" padding="around-medium" flexibility="auto">
+      <c-student-details></c-student-details>
+    </lightning-layout-item>
+    <lightning-layout-item size="4" padding="around-medium" flexibility="auto">
+      <lightning-datatable key-field="id" data={data} columns={columns}>
+      </lightning-datatable>
+    </lightning-layout-item>
+  </lightning-layout>-->
+  <lightning-tabset>
+    <lightning-tab label="Student Matching" icon-name="standard:employee_job">
+      <lightning-layout>
+        <template if:true={filterShowHide}>
+          <lightning-layout-item size="2" flexibility="auto">
+            <c-internsip-match-filter></c-internsip-match-filter>
+          </lightning-layout-item>
+        </template>
+        <lightning-layout-item size="6" flexibility="auto">
+          <div
+            class="slds-box slds-box_x-small slds-theme_shade slds-theme--alert-texture"
+          >
+            <c-student-details></c-student-details>
+          </div>
+        </lightning-layout-item>
+        <lightning-layout-item size={seatSize} flexibility="auto">
+          <div
+            class="slds-box slds-box_x-small slds-theme_shade slds-theme--alert-texture"
+          >
+            <c-seats-avaiable></c-seats-avaiable>
+            <c-seat-details></c-seat-details>
+          </div>
+        </lightning-layout-item>
+      </lightning-layout>
+    </lightning-tab>
+    <lightning-tab
+      label="Seat Matching"
+      icon-name="standard:employee_organization"
+    >
+      Two Content !
+    </lightning-tab>
+    <lightning-tab label="Matches Map" icon-name="standard:location">
+      <c-matching-map std-record={studentRecord}></c-matching-map>
+    </lightning-tab>
+  </lightning-tabset>
+</template>

@@ -1,0 +1,14 @@
+/**
+    * Yearup.
+    *
+    * @category  Yearup
+    * @author    Yearup
+    * @copyright Yearup
+    * @description This css style is to hide the quick action model.
+*/
+.THIS .slds-backdrop_open{
+    visibility: hidden;
+}
+.THIS .slds-backdrop--open{
+    visibility: hidden;
+}

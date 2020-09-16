@@ -1,0 +1,6 @@
+.THIS.heading{
+    position: relative;
+    z-index: 1000;
+    margin-top: 20px;
+    margin-right: 8px;
+}

@@ -1,0 +1,125 @@
+<template>
+        <lightning-card  title="Address Search">
+           <div class="slds-card__body slds-card__body_inner">
+              <div class="slds-grid slds-wrap">
+                 <div class="slds-col slds-size_4-of-4">
+                    <div class="slds-form-element" >
+                       <div class="slds-form-element__control">
+                           <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right" role="none">
+                                 <fieldset class="slds-form--compound">
+                                       <div class="form-element__group">
+                                             <div class="slds-form-element__row">
+                                                <lightning-input  
+                                                   label="Search Address" value={searchKey} type="search"
+                                                   onchange={handleOnchange} placeholder={searchHolder} is-loading={isLoading}>
+                                                </lightning-input>
+                                                <lightning-combobox
+                                                   name="type"
+                                                   label="Type"
+                                                   value={typevalue}
+                                                   placeholder="Select.."
+                                                   options={tyopeOptions}
+                                                   onchange={handleTypeChange} >
+                                                </lightning-combobox>                                               
+                                             </div>
+                                          </div>                                   
+                                </fieldset>
+                             </div>
+                          <div class="slds-combobox_container">
+                             <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+                                
+                                <!--Start Listbox-->
+                                
+                                <div id="listbox-id-17" if:true={condition} class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+                                   <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                      <template for:each={predictions} for:item="prediction">
+                                         <li role="presentation" class="slds-listbox__item" key={prediction.place_id}>
+                                            <div onclick={getDetails} data-placeid={prediction.place_id} aria-selected="true" id={prediction.place_id} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta slds-has-focus" role="option" tabindex="0">
+                                               <span class="slds-media__figure slds-listbox__option-icon">
+                                                  <span class="slds-icon_container slds-icon-standard-account">
+                                                     <lightning-icon size="medium" icon-name="standard:address" alternative-text="address" ></lightning-icon>
+                                                  </span>
+                                               </span>
+                                               <span class="slds-media__body">
+                                               <span class="slds-listbox__option-text slds-listbox__option-text_entity">{prediction.structured_formatting.main_text}</span>
+                                               <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">{prediction.description}</span>
+                                               </span>
+                                            </div>
+                                         </li>
+                                      </template>
+                                   </ul>
+                                </div>
+                                <!--End Listbox for Address Search-->
+                             </div>
+                          </div>
+                       </div>
+                    </div>
+
+                 
+                   
+                    <fieldset class="slds-form--compound">
+                       <legend class="slds-form-element__label">Address</legend>
+                       <div class="form-element__group">
+                          <div class="slds-form-element__row">
+                             <label class="slds-form-element__control slds-size--1-of-1">
+                             <span class="slds-form-element__helper">Street</span>
+                             <input class="slds-input" type="text" value={finalStreet} />
+                             </label>
+                          </div>
+                          <div class="slds-form-element__row">
+                             <label class="slds-form-element__control slds-size--1-of-2">
+                             <span class="slds-form-element__helper">City</span>
+                             <input class="slds-input" type="text" value={finalCity}  />
+                             </label>
+                             <label class="slds-form-element__control slds-size--1-of-2">
+                             <span class="slds-form-element__helper">State</span>
+                             <input class="slds-input" type="text" value={finalState} />
+                             </label>
+                          </div>
+                          <div class="slds-form-element__row">
+                             <label class="slds-form-element__control slds-size--1-of-2">
+                             <span class="slds-form-element__helper">ZIP Code</span>
+                             <input class="slds-input" type="text" value={finalZip} />
+                             </label>
+                             <label class="slds-form-element__control slds-size--1-of-2">
+                             <span class="slds-form-element__helper">Country</span>
+                             <input class="slds-input" type="text" value={finalCountry}  />
+                             </label>
+                          </div>
+                       </div>
+                    </fieldset>
+                    <template if:true={conAddress}>
+                           <lightning-combobox
+                              name="type"
+                              label="Address Type"
+                              value={addrTypeValue}
+                              placeholder="Select Address Type"
+                              options={options}
+                              required
+                              onchange={handleChange} >
+                        </lightning-combobox>
+                    </template>
+
+                    <template if:true={vfpageMessage}>
+                        <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_warning" role="alert">
+                              <span class="slds-assistive-text">warning</span>                              
+                              <h2><b>{vfpageMessage}</b>
+                              </h2>
+                        </div> 
+                    </template>
+                    
+                    <div class="slds-p-top_medium">
+                            <template if:true={loaded}>
+                                    <lightning-spinner alternative-text="Loading"></lightning-spinner>
+                                </template>
+                       <lightning-button variant="brand" label="Update Address" title="Update Address" disabled={btnDisable} onclick={updateRecord} class="slds-p-top_medium"></lightning-button>
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <template if:true={error}>
+             <c-error-panel errors={error}></c-error-panel>
+           </template>
+        </lightning-card>
+     
+     </template>

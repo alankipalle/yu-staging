@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>App for managing internship seat sales and partnerships</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>CE Classic</label>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>Engagement__c</tabs>
+    <tabs>standard-Opportunity</tabs>
+    <tabs>Strategic_Acct_Plan__c</tabs>
+    <tabs>Apprenticeship__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>RADIO</tabs>
+    <tabs>Timesheet__c</tabs>
+    <tabs>Engagement_Weeks__c</tabs>
+    <tabs>Admissions_Lead_Snapshot_Object__c</tabs>
+    <tabs>Internship_Work_Site__c</tabs>
+    <tabs>YURelease__c</tabs>
+    <tabs>National_Sales_Demand</tabs>
+    <tabs>Site_Credit__c</tabs>
+    <tabs>Education_Objectives__c</tabs>
+    <tabs>Placement_Team__c</tabs>
+    <tabs>Seat_Survey_Result__c</tabs>
+</CustomApplication>

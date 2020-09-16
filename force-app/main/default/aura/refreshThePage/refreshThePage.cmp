@@ -1,0 +1,28 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,force:appHostable" access="global" > 
+    <!-- 
+    /**
+    * Yearup.
+    *
+    * @category  Yearup
+    * @author    Yearup
+    * @copyright Yearup
+    * @description This component is for global layout to refresh the current page.
+    */
+    -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
+    <aura:html tag="style">
+        .slds-backdrop {
+        background: rgba(43, 40, 38, 0) !important;  
+        }
+        .slds-fade-in-open {
+        display:none !important;
+        }
+        .slds-backdrop_open{
+        visibility: hidden;
+        }
+        .slds-backdrop--open{
+         visibility: hidden;
+        }
+        
+    </aura:html>
+</aura:component>

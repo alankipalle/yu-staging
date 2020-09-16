@@ -1,0 +1,20 @@
+<template>
+   
+                <lightning-combobox label="L&D Track" 
+                                    name="track" 
+                                    onchange={handleTrackChange} 
+                                    options={controllingValues} 
+                                    placeholder="All" 
+                                    value={selectedTrack}></lightning-combobox>
+               
+                    <lightning-combobox label="L&D Specialty" 
+                                    name="specialty"
+                                    onchange={handleSpecialtyChange} 
+                                    options={dependentValues} 
+                                    placeholder="All" 
+                                    value={selectedSpecialty}
+                                    disabled={isEmpty}></lightning-combobox>  
+                                  
+              
+       
+</template>

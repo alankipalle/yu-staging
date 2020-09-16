@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <description>App for administration of enrolled students.  Includes Social Work, Amendment Plans, Volunteering.</description>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Student Management</label>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>Engagement__c</tabs>
+    <tabs>Learning_Community__c</tabs>
+    <tabs>Volunteering__c</tabs>
+    <tabs>LCs_Tracks</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>RADIO</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>Student_Facebook</tabs>
+    <tabs>Site__c</tabs>
+    <tabs>Cohort__c</tabs>
+    <tabs>Engagement_Weeks__c</tabs>
+    <tabs>Experian_Data_Quality_Grader</tabs>
+    <tabs>Staff_Facebook</tabs>
+    <tabs>Info_Session__c</tabs>
+    <tabs>Admissions_Lead_Snapshot_Object__c</tabs>
+    <tabs>YURelease__c</tabs>
+    <tabs>Site_Credit__c</tabs>
+    <tabs>National_Sales_Demand</tabs>
+    <tabs>Seat_Survey_Result__c</tabs>
+</CustomApplication>

@@ -1,0 +1,239 @@
+<template>
+        <c:newCorporateConnection></c:newCorporateConnection>
+        <div class="slds-card">
+            <div if:true={isLoaded} >
+                <lightning-spinner variant="brand" size="large"></lightning-spinner>
+            </div>
+            <div class="slds-grid slds-wrap ">
+                <div style="padding: 10px;" class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--12-of-12 slds-large-size--12-of-12">
+                    <div>
+                        If this box is checked, then your search will find Corporate Connections who fit your search criteria within all of the accounts that are part of this account family. If you would like to limit your search to find only the Corporate Connections who are part of this specific account, then unselect this checkbox.
+                    </div>
+                    <table if:true={ModelAffiliation} >
+                        <tr>
+                            <td>
+                                <b>Include Hierarchy</b>
+                            </td>
+                            <td style="padding-left: 10px; padding-right: 10px;">
+                                <lightning-input type="checkbox" checked="checked"  variant="label-hidden" id="isHierarchy"  onclick={handleChange} class="isHierarchy"   label="Hierarchy" name="isHierarchy" value={isHierarchy}></lightning-input>
+                            </td>
+                           <!--- <td >
+                                <b>Contact Role</b>
+                            </td>
+                            <td style="padding-left: 10px; padding-right: 10px;">
+                                <lightning-combobox variant="label-hidden"   options={options}  onchange={handleChange}  label="Search" id="searchConRole" name="searchConRole" value={searchConRole}></lightning-combobox>
+                            </td>-->
+                            
+                            <td>
+                                <b>Contact</b>
+                            </td>
+                            <td style="padding-left: 10px; padding-right: 10px;">
+                                <lightning-input type="text" variant="label-hidden"  onchange={handleChange} label="Search" id="ContactSearch" name="ContactSearch" value={ContactSearch}></lightning-input>
+                            </td>
+                            <td>
+                                <b>Title</b>
+                            </td>
+                            <td style="padding-left: 10px; padding-right: 10px;">
+                                <lightning-input type="text" variant="label-hidden"  onchange={handleChange} label="Search" id="TitleSearch" name="TitleSearch" value={TitleSearch}></lightning-input>
+                            </td>
+                            <td style="padding-left: 10px; padding-right: 10px;">
+                                <lightning-button label="Search" title="Neutral action" onclick={searchItems} ></lightning-button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </dIV>
+            <div class="slds-grid slds-wrap " if:true={ModelAffiliation}>
+                <div  if:false={ModelAffiliation.flag} class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--12-of-12 slds-large-size--12-of-12">
+                        <div style="color:red">
+                                Search Results returned more than 2000 records. Please provide more detailed search criteria to narrow search results
+                         </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap " if:true={ModelAffiliation}>
+                <div if:true={ModelAffiliation.flag} style="overflow: auto; width: 100%;"  class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--12-of-12 slds-large-size--12-of-12">
+                  
+                    <div if:true={ModelAffiliation.isGlobal} >
+                        <table  class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+                            <thead>
+                                <tr class="slds-text-heading--label">
+                                   
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">New Corporate Connection</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate"> Affliation</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Contact</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Account </div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Title</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Status</div>
+                                    </th>
+                                   <!-- <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Contact Role </div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Primary</div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">Start Date </div>
+                                    </th>
+                                    <th class="slds-is-sortable" scope="col">
+                                        <div class="slds-truncate">End Date</div>
+                                    </th>-->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="9">
+                                        <center>
+                                            <h1 style="color:red">Account specific search Resulted in 0 Records </h1>
+                                        </center>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div if:true={ModelAffiliation.isGlobal} style="color:red;padding-left: 10px;">
+                            <div if:true={isSize}> Searching in Global Account Records</div>
+                    </div>
+                    <table  class="slds-table slds-table--bordered slds-max-medium-table--stacked-horizontal">
+                        <thead>
+                            <tr class="slds-text-heading--label">
+                              
+                                <th if:true={ModelAffiliation.isGlobal} class="slds-is-sortable" scope="col" style="cursor: pointer;" >
+                                    <div class="slds-truncate" style="display: inline;"> New Corporate Connection</div>
+                                   
+                                </th>
+
+                                <th  id="Name,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="Name,div1" class="slds-truncate" style="display: inline;"> Affliation</div>
+                                    <div id="Name,div2" if:true={isNameAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="Name,div3" if:true={isNameDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+                               
+
+                                <th  id="npe5__Contact__r.Name,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__Contact__r.Name,div1" class="slds-truncate" style="display: inline;"> Contact</div>
+                                    <div id="npe5__Contact__r.Name,div2" if:true={isContactAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__Contact__r.Name,div3" if:true={isContactDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                                <th  id="npe5__Organization__r.Name,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__Organization__r.Name,div1" class="slds-truncate" style="display: inline;"> Account</div>
+                                    <div id="npe5__Organization__r.Name,div2" if:true={isAccountAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__Organization__r.Name,div3" if:true={isAccountDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                                <th  id="npe5__Contact__r.title,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__Contact__r.title,div1" class="slds-truncate" style="display: inline;"> Title</div>
+                                    <div id="npe5__Contact__r.title,div2" if:true={istitleAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__Contact__r.title,div3" if:true={istitleDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                                <th  id="npe5__Status__c,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__Status__c,div1" class="slds-truncate" style="display: inline;"> Status</div>
+                                    <div id="npe5__Status__c,div2" if:true={isStatusAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__Status__c,div3" if:true={isStatusDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                                
+                                
+
+                              
+                               <!---<th  id="Contact_Role__c,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="Contact_Role__c,div1" class="slds-truncate" style="display: inline;"> Contact Role</div>
+                                    <div id="Contact_Role__c,div2" if:true={isContactRoleAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="Contact_Role__c,div3" if:true={isContactRoleDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+
+                                <th  id="npe5__Primary__c,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__Primary__c,div1" class="slds-truncate" style="display: inline;"> Primary</div>
+                                    <div id="npe5__Primary__c,div2" if:true={isPrimaryAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__Primary__c,div3" if:true={isPrimaryDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                              
+                                <th  id="npe5__StartDate__c,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__StartDate__c,div1" class="slds-truncate" style="display: inline;"> Start Date</div>
+                                    <div id="npe5__StartDate__c,div2" if:true={isStartDateAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__StartDate__c,div3" if:true={isStartDateDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+
+                                <th  id="npe5__EndDate__c,th" class="slds-is-sortable" scope="col" style="cursor: pointer;" onclick={sortRecordRecord}>
+                                    <div id="npe5__EndDate__c,div1" class="slds-truncate" style="display: inline;"> End Date</div>
+                                    <div id="npe5__EndDate__c,div2" if:true={isEndDateAsc} style="display: inline; margin-left: 5px;">&uarr;</div>
+                                    <div id="npe5__EndDate__c,div3" if:true={isEndDateDesc} style="display: inline; margin-left: 5px;">&darr;</div>
+                                </th>
+                                -->
+                               
+                            </tr>
+                        </thead>
+                        <tr for:each={ModelAffiliation.lstofAffRecords} for:item="row" class="slds-hint-parent"  key={row.Id}>
+                              
+                            <td if:true={ModelAffiliation.isGlobal} class="slds-truncate"   data-label="Action">
+                                <a  onclick={createNewItem} id={row.npe5__Contact__c} style="cursor: pointer;">Add  </a>
+
+                            </td>
+
+                            <td class="slds-truncate"   data-label="Affliation">
+                                <a  onclick={selectedItem} id={row.Id} style="cursor: pointer;">{row.Name} </a>
+                            </td>
+                            <td class="slds-truncate"  data-label="Contact" >
+                                <a  onclick={selectedItem} id={row.npe5__Contact__c} style="cursor: pointer;">{row.npe5__Contact__r.Name} </a>
+                            </td>
+                            <td class="slds-truncate"  data-label="ACCOUNT">
+                                <a  onclick={selectedItem} id={row.npe5__Organization__c} style="cursor: pointer;">{row.npe5__Organization__r.Name} </a>
+                            </td>
+                            <td class="slds-truncate"  data-label="Title">{row.npe5__Role__c }</td>
+                            <td class="slds-truncate"  data-label="Status">{row.npe5__Status__c}</td>
+                            <!--<td class="slds-truncate"  data-label="Contact Role">{row.Contact_Role__c}</td>
+                            <td class="slds-truncate"  data-label="Primary">
+                                  <lightning-input type="checkbox" variant="label-hidden"  label="Search" disabled="disabled"  checked={row.npe5__Primary__c}></lightning-input>
+                            </td>
+                            <td class="slds-truncate"  data-label="Start Date"> <lightning-formatted-date-time  year="numeric" month="numeric" day="numeric"  value={row.npe5__StartDate__c}></lightning-formatted-date-time></td>
+                            <td class="slds-truncate"  data-label="End Date"> <lightning-formatted-date-time  year="numeric" month="numeric" day="numeric"  value={row.npe5__EndDate__c}></lightning-formatted-date-time></td>-->
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap ">
+                <div if:true={ModelAffiliation} style="padding: 10px;" class="slds-p-horizontal--small slds-size--1-of-1 slds-medium-size--12-of-12 slds-large-size--12-of-12">
+                 <center>
+                    <table style="width:auto">
+                      <tr>
+                          <td style="padding-left: 10px;padding-right: 10px;">
+                                <lightning-button disabled={ModelAffiliation.hasNext} label="First" id="First" title="Neutral action" onclick={paginationRecords} ></lightning-button>
+                          </td>
+
+                          <td style="padding-left: 10px;padding-right: 10px;">
+                                <lightning-button disabled={ModelAffiliation.hasNext}  label="Previous" id="Previous" title="Neutral action" onclick={paginationRecords} ></lightning-button>
+                          </td>
+
+                          <td style="padding-left: 10px;padding-right: 10px;">
+                              Page {ModelAffiliation.pageNumber} &nbsp; of &nbsp;  {ModelAffiliation.totalPages}
+                          
+                            </td>
+
+                          <td style="padding-left: 10px;padding-right: 10px;">
+                                <lightning-button disabled={ModelAffiliation.hasPrevious}  label="Next" id="Next" title="Neutral action" onclick={paginationRecords} ></lightning-button>
+                          </td>
+
+                          <td style="padding-left: 10px;padding-right: 10px;">
+                                <lightning-button disabled={ModelAffiliation.hasPrevious}  label="Last" id="Last" title="Neutral action" onclick={paginationRecords} ></lightning-button>
+                          </td>
+                      </tr>
+                 </table>
+                </center>
+                </div>
+            </div>
+        </div>
+    </template>

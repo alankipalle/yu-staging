@@ -1,0 +1,32 @@
+<template>
+    <div onkeyup={handleKeyUp}>
+       <lightning-input
+          name="enter-search"
+          label={objectName}
+          type="search"
+          ></lightning-input>
+    </div>
+    <div class="slds-combobox_container">
+       <div class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-is-open" aria-expanded="true" aria-haspopup="listbox" role="combobox">
+          <div id="listbox-id-17"  if:true={condition} class="slds-p-left_small slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+             <fieldset class="slds-form-element">
+                <lightning-checkbox-group name="Checkbox Group"
+                   label={objectName}
+                   options={predictions}
+                   value={value}
+                   onchange={handleCheckboxChange}>
+                </lightning-checkbox-group>
+             </fieldset>
+             <footer class="slds-popover__footer slds-popover__footer_form">
+                <lightning-button label="Cancel" title="Cancel" 
+                   onclick={handleCancelClick} class="slds-m-left_x-small"></lightning-button>
+                <lightning-button variant="success" label="Done" title="Done"
+                   onclick={handleDoneClick} class="slds-m-left_x-small"></lightning-button>
+             </footer>
+          </div>
+       </div>
+    </div>
+    <template if:true={itemsLenght}>
+       <lightning-pill-container items={selectedItems} onitemremove={handleItemRemove}></lightning-pill-container>
+    </template>
+ </template>

@@ -1,0 +1,12 @@
+<!--SampleComponent.cmp-->
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+    <!--Declare Aura Event-->
+    <aura:registerEvent name="sampleEvent" type="c:SampleEvent" />
+    <!--Component End-->
+    <aura:attribute name="myVal" type="String" />
+    <aura:handler name="change" value="{!v.myVal}" action="{!c.handleValueChange}"/>
+    <lightning:inputRichText value="{!v.myVal}" placeholder="Start typing here...." 
+                             formats="['font', 'image','size', 'bold', 'italic', 'underline',
+            'strike', 'list', 'indent', 'align',
+            'clean', 'table', 'header', 'color']"/>
+</aura:component>

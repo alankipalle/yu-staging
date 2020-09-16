@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>Staff_Facebook</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>Staff_Facebook</tabs>
+    <tabs>Admissions_Lead_Snapshot_Object__c</tabs>
+    <tabs>National_Sales_Demand</tabs>
+    <tabs>Seat_Survey_Result__c</tabs>
+</CustomApplication>

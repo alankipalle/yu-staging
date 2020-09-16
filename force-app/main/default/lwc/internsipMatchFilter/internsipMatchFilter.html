@@ -1,0 +1,80 @@
+<template>
+  <template if:true={hideShowSeciton}>
+    <lightning-card class="slds-theme_shade">
+      <h3 slot="title">
+        <lightning-icon
+          icon-name="action:filter"
+          size="xx-small"
+        ></lightning-icon>
+        &nbsp;Filters
+      </h3>
+      <br />
+      <lightning-button-icon
+        slot="actions"
+        icon-name="action:refresh"
+        alternative-text="reset"
+        title="Reset"
+        onclick={resetFilters}
+      ></lightning-button-icon>
+      <div class="slds-var-m-around_medium">
+        <template if:true={MarketPicklistValues.data}>
+          <lightning-combobox
+            name="market"
+            label="Market"
+            value={marketvalue}
+            placeholder="Select Market"
+            options={MarketPicklistValues.data.values}
+            onchange={handleChange}
+          >
+          </lightning-combobox>
+        </template>
+        <lightning-combobox
+          name="site"
+          label="Site"
+          value={sitevalue}
+          placeholder="All"
+          options={sites}
+          onchange={handleChange}
+        >
+        </lightning-combobox>
+        <lightning-combobox
+          name="lc"
+          label="LC"
+          value={lcvalue}
+          placeholder="All"
+          options={lcs}
+          onchange={handleChange}
+        >
+        </lightning-combobox>
+        <c-dependent-picklist></c-dependent-picklist>
+        <lightning-combobox
+          name="engagementStatus"
+          label="Engagement Status"
+          value={value}
+          placeholder="All"
+          options={statusoptions}
+          onchange={handleChange}
+        >
+        </lightning-combobox>
+        <lightning-combobox
+          name="rating"
+          label="IR Rating"
+          value={value}
+          placeholder="All"
+          options={ratingoptions}
+          onchange={handleChange}
+        >
+        </lightning-combobox>
+        <lightning-combobox
+          name="confirmedseat"
+          label="Confirmed Seat"
+          value={value}
+          placeholder="All"
+          options={options}
+          onchange={handleChange}
+        >
+        </lightning-combobox>
+      </div>
+    </lightning-card>
+  </template>
+</template>

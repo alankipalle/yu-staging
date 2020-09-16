@@ -1,0 +1,77 @@
+<template>
+    <div class="slds-page-header slds-page-header_record-home">
+        <div class="slds-page-header__row">
+            <div class="slds-page-header__col-title">
+               <div class="slds-media">
+                  <div class="slds-media__figure">
+                     <span class="slds-icon_container slds-icon-standard-contact">
+                        <lightning-icon icon-name="standard:contact" size="medium" ></lightning-icon>
+                     </span>
+                  </div>
+                  <div class="slds-media__body">
+                     <div class="slds-page-header__name">
+                        <div class="slds-page-header__name-title">
+                           <h1>
+                              <span>Student Matching Interface</span>
+                              <span class="slds-page-header__title slds-truncate" title="Acme - 1,200 Widgets">Staff can match the Student with available seats.</span>
+                           </h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slds-page-header__col-actions">
+               <div class="slds-page-header__controls">
+                  <div class="slds-page-header__control">
+                     <!-- Button group: simple buttons -->
+                    <lightning-button-group>
+                        <lightning-button label={label} onclick={handleHide}></lightning-button>
+                        <lightning-button-icon icon-name="utility:settings"  alternative-text="Settings" title="Settings"></lightning-button-icon>
+                    </lightning-button-group>
+                  </div>                  
+               </div>
+            </div>
+         </div>
+     </div>
+        
+     <template if:true={section}>
+    <lightning-card>   
+        
+        <div class="c-container">
+            <lightning-layout vertical-align="stretch" multiple-rows="true" >
+                <lightning-layout-item flexibility="auto" class="slds-p-left_x-small">
+                    <template if:true={MarketPicklistValues.data}>
+                        <lightning-combobox name="market" label="Market" value={marketvalue} placeholder="Select Market" options={MarketPicklistValues.data.values} onchange={handleChange}>
+                        </lightning-combobox>
+                    </template>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto"  class="custom-box slds-p-left_small">
+                    <lightning-combobox name="site" label="Site" value={sitevalue} placeholder="All" options={sites} onchange={handleChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto"  class="custom-box slds-p-left_small">
+                    <lightning-combobox name="lc" label="LC" value={lcvalue} placeholder="All" options={lcs} onchange={handleChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto"  class="custom-box slds-p-left_small">
+                    <c-dependent-picklist></c-dependent-picklist>
+                </lightning-layout-item>              
+                <lightning-layout-item flexibility="auto"  class="custom-box slds-p-left_small">
+                    <lightning-combobox name="engagementStatus" label="Engagement Status" value={value} placeholder="All" options={statusoptions} onchange={handleChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto" class="custom-box slds-p-left_small">
+                    <lightning-combobox name="rating" label="IR Rating" value={value} placeholder="All" options={ratingoptions} onchange={handleChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="auto" class="custom-box slds-p-left_small slds-p-right_x-small">
+                    <lightning-combobox name="confirmedseat" label="Confirmed Seat" value={value} placeholder="All" options={options} onchange={handleChange}>
+                    </lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+            
+        </div>
+   
+    </lightning-card>
+</template>
+</template>

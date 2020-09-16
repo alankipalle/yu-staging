@@ -1,0 +1,5 @@
+<aura:component>
+  <c:matchingTableau
+    vizUrl="https://us-east-1.online.tableau.com/t/yearup/views/MatchingInterfaceStudentSalesforce/MatchingInterface?:embed=y#1"
+  ></c:matchingTableau>
+</aura:component>

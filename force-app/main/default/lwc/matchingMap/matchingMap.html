@@ -1,0 +1,27 @@
+<template>
+  <lightning-card variant="narrow" icon-name="standard:opportunity">
+    <h1 slot="title">Student</h1>
+    <lightning-layout>
+      <lightning-layout-item size="2" padding="slds-p-around_x-small">
+        <div
+          class="slds-box slds-box_x-small slds-theme_shade slds-theme--alert-texture"
+        >
+          {stdRecord}
+        </div>
+      </lightning-layout-item>
+      <lightning-layout-item size="10" padding="slds-p-around_x-small">
+        <div
+          class="slds-box slds-box_x-small slds-theme_shade slds-theme--alert-texture"
+        >
+          <lightning-map map-markers={mapMarkers}></lightning-map>
+        </div>
+      </lightning-layout-item>
+    </lightning-layout>
+    <div slot="actions">
+      <lightning-button-icon icon-name="utility:down"></lightning-button-icon>
+    </div>
+    <div slot="footer">
+      <h6>This is the footer</h6>
+    </div>
+  </lightning-card>
+</template>

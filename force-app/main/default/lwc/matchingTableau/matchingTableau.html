@@ -1,0 +1,19 @@
+<template>
+  <lightning-tabset>
+    <lightning-tab label="Student Matching" icon-name="standard:employee_job">
+      <c-tableau-viz viz-url={studentURL}></c-tableau-viz>
+    </lightning-tab>
+    <lightning-tab
+      label="Seat Matching"
+      icon-name="standard:employee_organization"
+    >
+      <c-tableau-viz viz-url={seatURL}></c-tableau-viz>
+    </lightning-tab>
+    <lightning-tab label="Matching Snapshot" icon-name="standard:dashboard">
+      <c-tableau-viz viz-url={snapshotURL}></c-tableau-viz>
+    </lightning-tab>
+    <lightning-tab label="Matches Map" icon-name="standard:location">
+      <c-tableau-viz viz-url={mapURL}></c-tableau-viz>
+    </lightning-tab>
+  </lightning-tabset>
+</template>

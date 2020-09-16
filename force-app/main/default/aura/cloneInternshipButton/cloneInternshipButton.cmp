@@ -1,0 +1,189 @@
+<aura:component implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes">
+    <!-- 
+    /**
+    * Yearup.org.
+    *
+    * @category  CE
+    * @author    Yearup.org    
+    * @Description   This component is used for cloning of internship using cone internship button on Internship record.
+    */
+    -->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>-->
+    <aura:attribute name="recordSaveError" type="String"/>
+    <force:recordData aura:id="internshipOriginalRecord"
+                      recordId="{!v.recordId}"
+                      targetRecord="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      fields="Id,
+                              Name,
+                              Track__c,
+                              Cohort_Sem__c,
+                              Job_Category__c,
+                              InternshipWorkSite__c,
+                              Site_Location__c,
+                              Start_Date__c,
+                              Employer__c,
+                              Opportunity__c,
+                              Billing_Start_Date__c,
+                              Employer__r.Name,
+                              InternshipWorkSite__r.Name,
+                              Site_Location__r.Name,
+                              Employer__r.Name"
+                      />
+    
+    
+    
+    <aura:attribute name="userObject" type="Object" />
+    <aura:attribute name="userRecordFields" type="Object" />     
+    <force:recordData aura:id="userRecord"
+                      recordId="{!$SObjectType.CurrentUser.Id}"
+                      targetRecord="{!v.userObject}"
+                      targetFields="{!v.userRecordFields}"
+                      fields="Id,
+                              Name,
+                              Profile.Name"
+                      recordUpdated="{!c.recordUpdate}"
+                      />
+    
+    <div class="slds-is-relative" >
+        <lightning:spinner aura:id="spinner" variant="brand" size="large" class="slds-hide"/>     
+    </div>
+    <aura:attribute name="newinternship" type="Object" access="private"/>
+    <aura:attribute name="simpleNewinternship" type="Object" access="private"/>
+    <aura:attribute name="newinternshipError" type="String" access="private"/>
+    <force:recordData aura:id="internshipRecordCreator"
+                      fields="Id,
+                              Name,
+                              Track__c,
+                              Cohort_Sem__c,
+                              Job_Category__c,
+                              InternshipWorkSite__c,                              
+                              Site_Location__c,                              
+                              Start_Date__c,
+                              Billing_Start_Date__c,
+                              Opportunity__c,
+                              Employer__c"
+                      targetRecord="{!v.newinternship}"
+                      targetFields="{!v.simpleNewinternship}"
+                      targetError="{!v.newinternshipError}"
+                      /> 
+    
+    
+    
+    <aura:if isTrue="{!(v.userRecordFields.Profile.Name=='CE Super User') || (v.userRecordFields.Profile.Name=='System Administrator')}">
+        <!-- Display an record details -->
+        <div class="Record Details">        
+            <lightning:card iconName="action:clone" title="Clone Internship">
+                <div class="slds-p-horizontal--small">                 
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-panel__section">
+                                <!--<h3 class="slds-text-heading_small slds-m-bottom_medium">Task Information</h3>-->
+                                <ul>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Track Family</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="Track"
+                                                               value="{!v.simpleRecord.Track__c}" />
+                                            </span>                                        
+                                        </div>
+                                    </li>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Specialty</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="JobCategory"
+                                                               value="{!v.simpleRecord.Job_Category__c}" />
+                                            </span>      
+                                        </div>
+                                    </li> 
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Internship Partner</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="EmployerName"
+                                                               value="{!v.simpleRecord.Employer__r.Name}" />
+                                            </span>      
+                                        </div>
+                                    </li> 
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Revenue Start Date</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="RevenueStartDate"
+                                                               value="{!v.simpleRecord.Billing_Start_Date__c}" />
+                                            </span>      
+                                        </div>
+                                    </li> 
+                                </ul>
+                                
+                            </div>
+                            
+                            <div class="slds-panel__section">
+                                <div class="slds-text-align_left">Are you sure, you want to CLONE this record?</div>
+                                <aura:if isTrue="{!not(empty(v.simpleRecord.Track__c))}">
+                                    <lightning:button label="Cancel" onclick="{!c.handleCancel}" class="slds-m-top_medium" />
+                                    <lightning:button label="Clone internship" onclick="{!c.handleSaveinternship}"
+                                                      variant="brand" class="slds-m-top_medium"/> 
+                                </aura:if>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <div class="slds-panel__section">
+                                <!--<h3 class="slds-text-heading_small slds-m-bottom_medium">Task Information</h3>-->
+                                <ul>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Site Location</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="SiteLocation"
+                                                               value="{!v.simpleRecord.Site_Location__r.Name}" />
+                                            </span>                                        
+                                        </div>
+                                    </li>
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Start Date</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="StartDate"
+                                                               value="{!v.simpleRecord.Start_Date__c}" />
+                                            </span>      
+                                        </div>
+                                    </li> 
+                                    <li class="slds-form-element slds-hint-parent slds-border_bottom">
+                                        <span class="slds-form-element__label">Internship Work Site</span>
+                                        <div class="slds-form-element__control">
+                                            <span class="slds-form-element__static">
+                                                <ui:outputText class="slds-output" aura:id="IWSName"
+                                                               value="{!v.simpleRecord.InternshipWorkSite__r.Name}" />
+                                            </span>      
+                                        </div>
+                                    </li>                   
+                                </ul>
+                            </div>                        
+                        </div>                    
+                    </div>                
+                </div>
+            </lightning:card>
+        </div>        
+    </aura:if> 
+    
+    <!-- Display Lightning Data Service errors, if any -->
+    <aura:if isTrue="{!not(empty(v.recordSaveError))}">
+        <!-- Display Lightning Data Service errors, if any -->       
+        <div class="recordError">                                  
+            <div class="slds-modal__header slds-theme--error slds-theme--alert-texture">
+                <h2 class="slds-text-heading--medium" id="prompt-heading-id">Internship cannot be cloned</h2>
+            </div>
+            <div class="slds-modal__content slds-p-around--medium">
+                <div style="text-align:center">
+                    <p><b>{!v.recordSaveError}</b></p>
+                </div>
+            </div>               
+        </div>
+    </aura:if>    
+</aura:component>

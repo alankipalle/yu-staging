@@ -1,0 +1,178 @@
+<template>
+  <div class={flexipageRegionWidth}>
+    <template if:true={studentsAvailable}>
+      <lightning-card title="Student Detail" icon-name="standard:contact">
+        <lightning-button
+          slot="actions"
+          label="Edit Student Record"
+          onclick={handleEdit}
+        ></lightning-button>
+        <lightning-button
+          slot="actions"
+          label={label}
+          onclick={handleFilterStatus}
+        ></lightning-button>
+        <template if:true={studentsAvailable}>
+          <div class="c-container">
+            <div class="slds-var-m-around_medium">
+              <lightning-combobox
+                name="student"
+                label="Studnet Name"
+                value={studentvalue}
+                placeholder="Select Student"
+                options={studentRecords}
+                onchange={handleChange}
+              >
+              </lightning-combobox>
+            </div>
+            <div class="slds-text-heading_medium slds-p-left_medium">
+              {address}
+              <b>{studentName}</b>&nbsp;<span class={badgeColor}
+                >{finalizeStatus}:&nbsp;<lightning-formatted-url
+                  value={internRecord}
+                  label={internRecordName}
+                  tooltip={internRecordName}
+                  target="_blank"
+                ></lightning-formatted-url
+              ></span>
+            </div>
+            <lightning-layout>
+              <lightning-layout-item
+                size="3"
+                padding="around-medium"
+                class="custom-box"
+              >
+                <img class="mythumbnail" src={photoId} width="280" />
+                <br />
+
+                <div class="slds-var-m-top_small">
+                  <div class="slds-text-heading_medium">
+                    General Information
+                  </div>
+                  <template if:true={recordId}>
+                    <lightning-record-view-form
+                      record-id={recordId}
+                      object-api-name={objectApiName}
+                    >
+                      <div class="slds-box slds-theme_shade">
+                        <lightning-output-field field-name="Name">
+                        </lightning-output-field>
+                        <lightning-output-field
+                          field-name="Learning_Community_Name__c"
+                        >
+                        </lightning-output-field>
+                        <lightning-output-field field-name="Site_Name__c">
+                        </lightning-output-field>
+                        <lightning-output-field field-name="Market_Name__c">
+                        </lightning-output-field>
+                        <lightning-output-field
+                          field-name="Track_Family_Name__c"
+                        >
+                        </lightning-output-field>
+                        <lightning-output-field field-name="Specialty_Name__c">
+                        </lightning-output-field>
+                      </div>
+                    </lightning-record-view-form>
+                  </template>
+                </div>
+              </lightning-layout-item>
+              <lightning-layout-item flexibility="auto" padding="around-small">
+                <lightning-icon
+                  icon-name="standard:event"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="standard:location"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="standard:metrics"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="standard:partners"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="standard:orders"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <lightning-icon
+                  icon-name="standard:process"
+                  alternative-text="Event"
+                  class="slds-var-m-right_medium"
+                ></lightning-icon>
+                <br />
+                <br />
+                <div class="slds-text-heading_medium">L&D Performance</div>
+                <template if:true={recordId}>
+                  <div
+                    class="slds-box slds-theme_shade slds-theme--alert-texture"
+                  >
+                    <lightning-record-form
+                      record-id={recordId}
+                      object-api-name={objectApiName}
+                      fields={preferencefields}
+                      columns="2"
+                      mode="readonly"
+                      onsubmit={handleSubmit}
+                    >
+                    </lightning-record-form>
+                  </div>
+                </template>
+                <br />
+                <div class="slds-text-heading_medium">Prefernces</div>
+                <template if:true={recordId}>
+                  <div
+                    class="slds-box slds-theme_shade slds-theme--alert-texture"
+                  >
+                    <lightning-record-form
+                      record-id={surveyrecordTypeId}
+                      object-api-name={surveyobjectApiName}
+                      fields={fields}
+                      columns="2"
+                      mode="readonly"
+                      onsubmit={handleSubmit}
+                    >
+                    </lightning-record-form>
+                  </div>
+                </template>
+                <br />
+                <div class="slds-text-heading_medium">Top Skills</div>
+                <template if:true={recordId}>
+                  <div
+                    class="slds-box slds-theme_shade slds-theme--alert-texture"
+                  >
+                    <lightning-record-form
+                      record-id={surveyrecordTypeId}
+                      object-api-name={surveyobjectApiName}
+                      fields={skillfields}
+                      columns="2"
+                      mode="readonly"
+                      onsubmit={handleSubmit}
+                    >
+                    </lightning-record-form>
+                  </div>
+                </template>
+                <div
+                  class="slds-box slds-theme_shade slds-theme--alert-texture"
+                >
+                  <!--<lightning-map map-markers={mapMarkers}></lightning-map>-->
+                </div>
+              </lightning-layout-item>
+            </lightning-layout>
+          </div>
+        </template>
+        <template if:false={studentsAvailable}>
+          <lightning-spinner alternative-text="Loading"></lightning-spinner>
+        </template>
+      </lightning-card>
+    </template>
+  </div>
+  <c-record-edit-form message={recordId}></c-record-edit-form>
+</template>
